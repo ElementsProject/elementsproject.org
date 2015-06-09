@@ -81,6 +81,8 @@ SHA256d proof of work is replaced with the system’s scripting system, just sig
 The Elements Alpha release uses a threshold of functionaries as a protocol adaptor and also to sign blocks of transactions.  In a future release we plan to replace the block-signing with merge-mining, though the functionaries remain to communicate the transfer transactions to the main chain.   The Signed Blocks feature serves to provide transaction processing functionality until merge-mining is implemented.  Our intent is to later phase in the fully decentralised 2-way peg mechanism to replace the functionaries.
 
 ## Proposed Elements
+These are some of the features currently under development, but are yet ready for testing in dev sidechain.
+
 #### Basic Asset Issuance
 *Principal Investigator: Jorge Timón*
  * [feature-assets](https://github.com/ElementsProject/elements/tree/feature_assets) - EXAMPLE branch of ongoing assets dev
