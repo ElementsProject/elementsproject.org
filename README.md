@@ -53,7 +53,7 @@ Elements Alpha functions as a sidechain to Bitcoin’s testnet, though the peg m
  * [branch alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
 
 #### Development Discussion
-* https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev sidechains-dev discussion list
+* Development Discussion List: https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev
 * Freenode IRC #sidechains-dev [[webchat](http://webchat.freenode.net/?channels=%23sidechains-dev)]
 * Bug Reports: Please submit issues to [github](https://github.com/ElementsProject/elements/issues).
 * Pull Requests: Please submit pull requests [github](https://github.com/ElementsProject/elements/pulls).
@@ -77,12 +77,12 @@ The Data Directory of the alpha testnet dev sidechain lives within your existing
 FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... 
 
 * [testnet-faucet](https://testnet-faucet.elementsproject.org/)
-* [alpha-faucet](https://alpha-faucet.elementsproject.org/) - notice anything different about the addresses?
+* [alpha-faucet](https://alpha-faucet.elementsproject.org/)
 
 For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without waiting for the customary confirmation and contest safety periods.
 
 # FAQ
-* *Is this an altcoin?* No.
+* _Is this an altcoin?_  No.  The key thing to understand about sidechains is value is transferred to or from the main chain.
 * ADDME
 
 #### Sidechain Elements Principal Investigators and Contributors
