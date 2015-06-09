@@ -50,6 +50,7 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 #### Development Discussion
 * https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev sidechains-dev discussion list
+* Freenode IRC #sidechains-dev [[webchat](http://webchat.freenode.net/?channels=%23sidechains-dev)]
 
 #### Build Instructions
 ```
