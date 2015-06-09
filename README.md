@@ -163,12 +163,12 @@ make
 The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin [Data Directory](https://en.bitcoin.it/wiki/Data_directory).  For example, in Linux `~/.bitcoin/alphatestnet3` contains the Alpha blocks, indicies and wallet.
 
 #### Moving coins between Testnet and Alpha
-FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... 
+See [alpha-README.md](https://github.com/ElementsProject/elements/blob/alpha/alpha-README.md) for instructions on how to transfer testnet coins to the alpha network and back.  Note that there is a lengthy confirmation and contest period that you must wait for a peg transfer to complete.
 
 * [testnet-faucet](https://testnet-faucet.elementsproject.org/)
 * [alpha-faucet](https://alpha-faucet.elementsproject.org/)
 
-For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods. (TODO: alpha-faucet currently gives you a rawtx that you need to submit manually with `sendrawtrasnsaction`.  We're working on it.)
+For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods.  (FIXME: alpha-faucet currently gives you a rawtx that you need to submit manually with `sendrawtrasnsaction`.  We're working on it.)
 
 # FAQ
 * _Is this an altcoin?_  No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No coins are created elsewhere.
