@@ -146,4 +146,4 @@ For your convenience, these faucets allow you to quickly obtain coins on either 
 * ADDME
 
 #### Sidechain Elements Principal Investigators and Contributors
-@apoelstra, @gmaxwell, @gwillen, @jtimon, @jwilkins, @Luke-Jr, @maaku, @pstratem, @sipa, @TheBlueMatt, @wtogami
+@apoelstra, @gmaxwell, @gwillen, @jonasschnelli, @jtimon, @jwilkins, @kanzure, @Luke-Jr, @maaku, @petertodd, @pstratem, @sipa, @TheBlueMatt, @wtogami
