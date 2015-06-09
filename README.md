@@ -25,9 +25,10 @@ FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
 ON AN "AS IS" BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
 PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 ```
-# Elements: features under investigation
+# Elements
+These collection of features under currently under investigation as part of the Alpha dev sidechain.
 
-## Current Elements
+## Elements
 ####Confidential Transactions 
 *Principal Investigator: Greg Maxwell* [[_Peer reviewed technical details_](https://people.xiph.org/~greg/confidential_values.txt)]
 
