@@ -33,7 +33,17 @@ FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
 ON AN "AS IS" BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
 PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 ```
+# Elements (features under development)
 
+## Elements currently in the alpha dev sidechain
+* item
+* item
+
+## Proposed Elements
+ * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
+ * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
+
+# How to try the Dev Sidechain?
 #### Source Code
 * https://github.com/ElementsProject/bitcoin - contains isolated feature and dev sidechains braches
  * [branch alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
@@ -54,7 +64,9 @@ git checkout alpha
 ./configure
 make
 # If your build was successful, you will find src/alphad, src/alpha-cli and src/qt/alpha-qt 
+
 ```
+
 The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin [Data Directory](https://en.bitcoin.it/wiki/Data_directory).  For example, in Linux `~/.bitcoin/alphatestnet3` contains the Alpha blocks, indicies and wallet.
 
 #### Moving coins between Testnet and Alpha
@@ -64,16 +76,6 @@ PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ...
 * [alpha-faucet](https://alpha-faucet.elementsproject.org/) - notice anything different about the addresses?
 
 For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without waiting for the customary confirmation and contest safety periods.
-
-# Elements (feature advancement for Bitcoin)
-
-## Elements contained in Alpha Sidechain
-* item
-* item
-
-## Proposed Elements
- * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
- * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
 
 #### Sidechain Elements Principal Investigators and Contributors
 @apoelstra, @gmaxwell, @jtimon, @jwilkins, @pstratem, @sipa, @TheBlueMatt, @wtogami
