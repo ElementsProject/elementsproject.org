@@ -33,7 +33,7 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 #### Development Discussion
 * https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev sidechains-dev discussion list
 
-# Alpha Tesnet Dev Sidechain
+# Alpha Testnet Dev Sidechain
 WRITE PARAGRAPH ABOUT IT HERE
 
 #### Build Instructions
@@ -51,18 +51,21 @@ The Data Directory of the alpha testnet dev sidechain lives within your existing
 
 #### Moving coins between Testnet and Alpha
 PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... 
-* [testnet-faucet](https://testnet-faucet.elementsproject.org/) Get coins for Bitcoin testnet here.
-* [alpha-faucet](https://alpha-faucet.elementsproject.org/) Get coins in the Alpha testnet sidechain here.
+
+* [testnet-faucet](https://testnet-faucet.elementsproject.org/)
+* [alpha-faucet](https://alpha-faucet.elementsproject.org/) - notice anything different about the addresses?
+
 For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without waiting for the customary confirmation and contest safety periods.
 
+# Elements (feature advancement for Bitcoin)
 
-#### Elements contained in Alpha Sidechain
+## Elements contained in Alpha Sidechain
 * item
 * item
 
-#### Proposed Elements
+## Proposed Elements
  * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
  * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
 
-## Sidechain Elements Principal Investigators and Contributors
+#### Sidechain Elements Principal Investigators and Contributors
 @apoelstra, @gmaxwell, @jtimon, @jwilkins, @pstratem, @sipa, @TheBlueMatt, @wtogami
