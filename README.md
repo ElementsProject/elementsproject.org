@@ -26,4 +26,4 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 * [foo](http://example.org)
 
 ### Elements Principal Investigators and Contributors
-@apoelstra, @gmaxwell, @jtimon, @jwilkins, @pstratem, @sipa, @TheBlueMatt, @wtogami
+@apoelstra, @gmaxwell, @gwillen, @jtimon, @jwilkins, @Luke-Jr, @maaku, @pstratem, @sipa, @TheBlueMatt, @wtogami
