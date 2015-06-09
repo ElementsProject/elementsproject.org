@@ -5,7 +5,7 @@ Elements is an open source, collaborative project where we work on a collection 
 
 “It's nice working on something without millions of BTCs resting on it, and still have a path to production use.”
 
-#### License and Disclaimer
+#### License
 ```
 Permission is hereby granted, without written agreement and without
 license or royalty fees, to use, copy, modify, and distribute this
