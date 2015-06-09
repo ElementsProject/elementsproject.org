@@ -115,8 +115,8 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 ```
 
 #### Development Discussion
-* Development Discussion List: https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev
-* Freenode IRC #sidechains-dev [[webchat](http://webchat.freenode.net/?channels=%23sidechains-dev)]
+* Development Discussion List: [sidechains-dev list](https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev)
+* Freenode IRC: #sidechains-dev [[webchat](http://webchat.freenode.net/?channels=%23sidechains-dev)]
 * Bug Reports: Please submit issues to [github](https://github.com/ElementsProject/elements/issues).
 * Pull Requests: Please submit pull requests [github](https://github.com/ElementsProject/elements/pulls).
 
