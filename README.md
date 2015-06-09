@@ -1,7 +1,7 @@
 # Sidechain Elements
 ![Sidechain Elements logo](http://i.imgur.com/Vbhiqop.png)
 
-Elements is an open source, collaborative project where we work on a collection of experiments to rapidly bring more technical innovation to Bitcoin.  The features that are proposed and developed in this technical community called Elements, arbitrary combinations of which can be fashioned into sidechains.
+Elements is an open source, collaborative project where we work on a collection of experiments to rapidly bring more technical innovation to Bitcoin.  Elements are features that are proposed and developed in this technical community that in arbitrary combinations can be fashioned into sidechains.
 
 “It's nice working on something without millions of BTCs resting on it, and still have a path to production use.”
 
@@ -27,7 +27,7 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 ```
 # Elements: features under investigation
 
-## Elements currently in the alpha dev sidechain
+## Current Elements
 ###Confidential Transactions 
 *Principal Investigator: Greg Maxwell* [[*Peer reviewed technical details*](https://people.xiph.org/~greg/confidential_values.txt)]
 
