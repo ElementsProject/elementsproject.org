@@ -16,11 +16,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <style>header { padding: 35px 20px; }</style> 
       <header>
         <h1>elementsproject.github.io</h1>
         <p>Open source code and developer sidechains for advancing Bitcoin</p>
-              <a href="https://github.com/ElementsProject/elements"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+        <p class="view"><a href="https://github.com/ElementsProject">View the Project on GitHub <small>ElementsProject</small></a></p>
+        <ul>
+          <li class="single"><a href="https://github.com/ElementsProject/elementsproject.github.io">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
       <section>
         <p><img src="http://i.imgur.com/Vbhiqop.png" alt="Sidechain Elements logo"></p>
@@ -135,12 +137,49 @@ Stronger security proof.</li>
 <h2>
 <a id="proposed-elements" class="anchor" href="#proposed-elements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proposed Elements</h2>
 
+<p>These are some of the features currently under development, but are yet ready for testing in dev sidechain.</p>
+
+<h4>
+<a id="basic-asset-issuance" class="anchor" href="#basic-asset-issuance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Asset Issuance</h4>
+
+<p><em>Principal Investigator: Jorge Timón</em></p>
+
 <ul>
 <li>
 <a href="https://github.com/ElementsProject/elements/tree/feature_assets">feature-assets</a> - EXAMPLE branch of ongoing assets dev</li>
+</ul>
+
+<p>Users can issue their own assets which represent fungible ownership of the underlying asset type representing by the newly created units, which could theoretically represent any asset including vouchers, coupons, currencies, deposits, bonds, shares, etc (subject to the respective jurisdiction’s regulatory requirements. </p>
+
+<p>This opens the door for building trustless exchanges, options, and other advanced smart contracts involving those arbitrary assets and the “hostcoin” (a native asset whose ID is equal to the hash of the genesis block or chain ID; in Alpha’s case, it is the federated-peg coin which is backed by testnet coins, see “Deterministic peg” section).</p>
+
+<p>All outputs are tagged with their asset identifier. Consensus rules are modified so that the total inputs and outputs are checked separately per asset.
+A new transaction type is added for creating issued assets (asset definition transactions). Like coinbase transactions, asset definition transactions (the new transaction type) have a null input, but unlike coinbases, asset definition transactions have more inputs in addition to that first null input. This difference not only helps us distinguish between the two: it also guarantees a source of entropy for the asset id (which is the sha256d hash of the transaction). Within an asset definition transaction, any number of outputs with 0 as asset ID can be included with any amount and they will be treated as the initial unspent outputs for the newly created asset.</p>
+
+<p>This technology is similar to colored coins in many ways, but explicit and consensus-enforced tagging has many advantages:</p>
+
+<ul>
+<li>Supports SPV wallets much more efficiently.</li>
+<li>Allows more complex consensus-enforced contracts.</li>
+<li>Benefits from other consensus-enforced extensions (ie confidential transactions would not be compatible with colored coins on top of Alpha).</li>
+<li>Opens the door for further consensus-enforced extensions that rely on the chain being able to operate with multiple assets.</li>
+</ul>
+
+<p>Currently only the hostcoin can be used to pay fees, but it should be possible to pay fees of different asset types simultaneously.
+In this first version all units of a given type must be issued within the asset definition transaction. In future versions it will be possible to define assets with a dynamic supply that can be increased after the definition, allowing the issuer to create new units.
+Future versions can also implement consensus enforced interest that would be interesting for p2p lending and issuance of assets with built-in demurrage (negative interest) among other things.</p>
+
+<h4>
+<a id="bitmask-sighash-modes" class="anchor" href="#bitmask-sighash-modes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bitmask Sighash Modes</h4>
+
+<p><em>Principal Investigator: Glenn Willen</em></p>
+
+<ul>
 <li>
 <a href="https://github.com/ElementsProject/elements/tree/feature_bitmasksighash">feature-bitmasksighash</a> - EXAMPLE branch of Bitmask Sighash modes</li>
 </ul>
+
+<p>The new CHECKSIG2 operator allows arbitrary, miner-rewritable bitmasks of inputs and outputs. This allows for more complex contractual pre-commitment schemes, such as signed offers with change in a distributed asset exchange.</p>
 
 <h1>
 <a id="testnet-dev-sidechain-demo-elements-alpha" class="anchor" href="#testnet-dev-sidechain-demo-elements-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testnet Dev Sidechain Demo: Elements Alpha</h1>
@@ -215,21 +254,21 @@ make
 <h4>
 <a id="moving-coins-between-testnet-and-alpha" class="anchor" href="#moving-coins-between-testnet-and-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moving coins between Testnet and Alpha</h4>
 
-<p>FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... </p>
+<p>See <a href="https://github.com/ElementsProject/elements/blob/alpha/alpha-README.md">alpha-README.md</a> for instructions on how to transfer testnet coins to the alpha network and back.  Note that there is a lengthy confirmation and contest period that you must wait for a peg transfer to complete.</p>
 
 <ul>
 <li><a href="https://testnet-faucet.elementsproject.org/">testnet-faucet</a></li>
 <li><a href="https://alpha-faucet.elementsproject.org/">alpha-faucet</a></li>
 </ul>
 
-<p>For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods. (TODO: alpha-faucet currently gives you a rawtx that you need to submit manually with <code>sendrawtrasnsaction</code>.  We're working on it.)</p>
+<p>For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods.  (FIXME: alpha-faucet currently gives you a rawtx that you need to submit manually with <code>sendrawtrasnsaction</code>.  We're working on it.)</p>
 
 <h1>
 <a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h1>
 
 <ul>
 <li>
-<em>Is this an altcoin?</em>  No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No coins are created elsewhere.</li>
+<strong>Is this an altcoin?</strong>   No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No new coins are created and the total money supply remains constant.</li>
 <li>ADDME</li>
 </ul>
 
