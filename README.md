@@ -1,15 +1,7 @@
 # Sidechain Elements
 ![Sidechain Elements logo](http://i.imgur.com/Vbhiqop.png)
 
-Development project of Open source components and developer sidechains for advancing the art of Bitcoin.
-
-Elements is a collection of experiments to bring more technical innovation to Bitcoin.
-
-Our first release is Elements Alpha, a developer sidechain and network that introduces several new technologies on a sidechain, pegged to Bitcoin’s testnet. All code is open source, like Bitcoin itself, and others are encouraged to contribute to the project as it evolves.
-
-Elements Alpha is intended to be a technology demo and testing environment. Not all features are ready yet (see Proposed Features), and the blockchain is intended to be short-lived and easily replaced as the technology evolves.
-
-Elements Alpha functions as a sidechain to Bitcoin’s testnet, though the peg mechanism currently works through a centralized protocol adapter, as described in the Sidechains whitepaper in appendix A. It relies on an auditable federation of signers to manage the testnet coins transferred into the sidechain (see the Deterministic Peg feature) and to produce blocks (see the Signed Block feature). This makes it possible to immediately explore the new chain’s possibilities, using different security trade-offs. We plan to, in a later release, upgrade the protocol adapter to support merge-mining of the sidechain, and ultimately to phase in the full 2-way pegging  mechanism.
+Elements is an open source, collaborative project where we work on a collection of experiments to rapidly bring more technical innovation to Bitcoin.  The features that are proposed and developed in this technical community called Elements, arbitrary combinations of which can be fashioned into sidechains.
 
 “It's nice working on something without millions of BTCs resting on it, and still have a path to production use.”
 
@@ -43,7 +35,11 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
  * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
  * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
 
-# Alpha: Testnet Dev Sidechain Demo
+# Testnet Dev Sidechain Demo: Elements Alpha
+To make it easy for the community to test the latest Elements, this project combines the best of them into dev sidechains.  The first release is Elements Alpha, a developer sidechain and network that introduces several new technologies on a sidechain, pegged to Bitcoin’s testnet. All code is open source, like Bitcoin itself, and others are encouraged to contribute to the project as we work to improve and add additional Elements.  Elements Alpha is intended to be a technology demo and testing environment.  Proposed Elements were not ready, and as a testnet development sidechain, this blockchain is intended to be short-lived and easily replaced as the technology evolves.
+
+Elements Alpha functions as a sidechain to Bitcoin’s testnet, though the peg mechanism currently works through a centralized protocol adapter, as described in the Sidechains whitepaper in appendix A. It relies on an auditable federation of signers to manage the testnet coins transferred into the sidechain (see the Deterministic Peg feature) and to produce blocks (see the Signed Block feature). This makes it possible to immediately explore the new chain’s possibilities, using different security trade-offs. We plan to, in a later release, upgrade the protocol adapter to support fully decentralized merge-mining of the sidechain, and ultimately to phase in the full 2-way pegging  mechanism.
+
 #### Source Code
 * https://github.com/ElementsProject/bitcoin - contains isolated feature and dev sidechains braches
  * [branch alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
