@@ -171,7 +171,7 @@ See [alpha-README.md](https://github.com/ElementsProject/elements/blob/alpha/alp
 For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods.  (FIXME: alpha-faucet currently gives you a rawtx that you need to submit manually with `sendrawtrasnsaction`.  We're working on it.)
 
 # FAQ
-* _Is this an altcoin?_  No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No coins are created elsewhere.
+* **Is this an altcoin?**   No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No new coins are created and the total money supply remains constant.
 * ADDME
 
 #### Sidechain Elements Principal Investigators and Contributors
