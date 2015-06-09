@@ -139,7 +139,7 @@ FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ...
 * [testnet-faucet](https://testnet-faucet.elementsproject.org/)
 * [alpha-faucet](https://alpha-faucet.elementsproject.org/)
 
-For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods.
+For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods. (TODO: alpha-faucet currently gives you a rawtx that you need to submit manually with `sendrawtrasnsaction`.  We're working on it.)
 
 # FAQ
 * _Is this an altcoin?_  No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No coins are created elsewhere.
