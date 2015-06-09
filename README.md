@@ -3,7 +3,15 @@
 
 Development project of Open source components and developer sidechains for advancing the art of Bitcoin.
 
-PARAGRAPH SUMMARY OF THE GOALS OF ELEMENTS AND COLLABORATIVE DEVELOPMENT APPROACH
+Elements is a collection of experiments to bring more technical innovation to Bitcoin.
+
+Our first release is Elements Alpha, a developer sidechain and network that introduces several new technologies on a sidechain, pegged to Bitcoin’s testnet. All code is open source, like Bitcoin itself, and others are encouraged to contribute to the project as it evolves.
+
+Elements Alpha is intended to be a technology demo and testing environment. Not all features are ready yet (see Proposed Features), and the blockchain is intended to be short-lived and easily replaced as the technology evolves.
+
+Elements Alpha functions as a sidechain to Bitcoin’s testnet, though the peg mechanism currently works through a centralized protocol adapter, as described in the Sidechains whitepaper in appendix A. It relies on an auditable federation of signers to manage the testnet coins transferred into the sidechain (see the Deterministic Peg feature) and to produce blocks (see the Signed Block feature). This makes it possible to immediately explore the new chain’s possibilities, using different security trade-offs. We plan to, in a later release, upgrade the protocol adapter to support merge-mining of the sidechain, and ultimately to phase in the full 2-way pegging  mechanism.
+
+“It's nice working on something without millions of BTCs resting on it, and still have a path to production use.”
 
 #### License and Disclaimer
 ```
