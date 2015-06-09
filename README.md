@@ -40,8 +40,8 @@ The most visible implication of Confidential Transactions is the introduction of
 * ADDME
 
 ## Proposed Elements
- * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - EXAMPLE branch of ongoing assets dev 
- * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - EXAMPLE branch of Bitmask Sighash modes
+ * [feature-assets](https://github.com/ElementsProject/elements/tree/feature_assets) - EXAMPLE branch of ongoing assets dev 
+ * [feature-bitmasksighash](https://github.com/ElementsProject/elements/tree/feature_bitmasksighash) - EXAMPLE branch of Bitmask Sighash modes
 
 # Testnet Dev Sidechain Demo: Elements Alpha
 To make it easy for the community to test the latest Elements, this project combines the best of them into dev sidechains.  The first release is Elements Alpha, a developer sidechain and network that introduces several new technologies on a sidechain, pegged to Bitcoin’s testnet. All code is open source, like Bitcoin itself, and others are encouraged to contribute to the project as we work to improve and add additional Elements.  Elements Alpha is intended to be a technology demo and testing environment.  Proposed Elements were not ready, and as a testnet development sidechain, this blockchain is intended to be short-lived and easily replaced as the technology evolves.
@@ -49,18 +49,20 @@ To make it easy for the community to test the latest Elements, this project comb
 Elements Alpha functions as a sidechain to Bitcoin’s testnet, though the peg mechanism currently works through a centralized protocol adapter, as described in the Sidechains whitepaper in appendix A. It relies on an auditable federation of signers to manage the testnet coins transferred into the sidechain (see the Deterministic Peg feature) and to produce blocks (see the Signed Block feature). This makes it possible to immediately explore the new chain’s possibilities, using different security trade-offs. We plan to, in a later release, upgrade the protocol adapter to support fully decentralized merge-mining of the sidechain, and ultimately to phase in the full 2-way pegging  mechanism.
 
 #### Source Code
-* https://github.com/ElementsProject/bitcoin - contains isolated feature and dev sidechains braches
+* https://github.com/ElementsProject/elements - contains isolated feature and dev sidechains braches
  * [branch alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
 
 #### Development Discussion
 * https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev sidechains-dev discussion list
 * Freenode IRC #sidechains-dev [[webchat](http://webchat.freenode.net/?channels=%23sidechains-dev)]
+* Bug Reports: Please submit issues to [github](https://github.com/ElementsProject/elements/issues).
+* Pull Requests: Please submit pull requests [github](https://github.com/ElementsProject/elements/pulls).
 
 #### Build Instructions
 ```
 # https://github.com/bitcoin/bitcoin/tree/master/doc
 # Please refer to the Bitcoin documentation to install the required build dependencies/
-git clone https://github.com/ElementsProject/bitcoin
+git clone https://github.com/ElementsProject/elements
 git checkout alpha
 ./autogen.sh
 ./configure
@@ -78,6 +80,10 @@ FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ...
 * [alpha-faucet](https://alpha-faucet.elementsproject.org/) - notice anything different about the addresses?
 
 For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without waiting for the customary confirmation and contest safety periods.
+
+# FAQ
+* *Is this an altcoin?* No.
+* ADDME
 
 #### Sidechain Elements Principal Investigators and Contributors
 @apoelstra, @gmaxwell, @jtimon, @jwilkins, @pstratem, @sipa, @TheBlueMatt, @wtogami
