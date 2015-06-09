@@ -1,5 +1,6 @@
-### Sidechain Elements
-Open source code and developer sidechains for advancing Bitcoin.
+![Sidechain Elements logo](http://i.imgur.com/Vbhiqop.png)
+
+Development project of Open source components and developer sidechains for advancing the art of Bitcoin.
 
 PARAGRAPH SUMMARY OF THE GOALS OF ELEMENTS AND COLLABORATIVE DEVELOPMENT APPROACH
 
@@ -26,8 +27,6 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 ### Source Code
 * https://github.com/ElementsProject/bitcoin - contains isolated feature and dev sidechains braches
- * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
- * [feature-ct](https://github.com/ElementsProject/bitcoin/tree/feature_ct) - branch of Bitmask Sighash modes
  * [alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
 
 ### Development Discussion
@@ -49,8 +48,8 @@ make
 * item
 
 ## Proposed Elements
-* item
-* item
+ * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
+ * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
 
 ### Sidechain Elements Principal Investigators and Contributors
 @apoelstra, @gmaxwell, @jtimon, @jwilkins, @pstratem, @sipa, @TheBlueMatt, @wtogami
