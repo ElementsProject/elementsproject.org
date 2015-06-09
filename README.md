@@ -145,13 +145,14 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 * Development Discussion List: [sidechains-dev list](https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev)
 * Freenode IRC: #sidechains-dev [[webchat](http://webchat.freenode.net/?channels=%23sidechains-dev)]
 * Bug Reports: Please submit issues to [github](https://github.com/ElementsProject/elements/issues).
-* Pull Requests: Please submit pull requests [github](https://github.com/ElementsProject/elements/pulls).
+* Pull Requests: Please submit pull requests to [github](https://github.com/ElementsProject/elements/pulls).
 
 #### Build Instructions
 ```
 # https://github.com/bitcoin/bitcoin/tree/master/doc
 # Please refer to the Bitcoin documentation to install the required build dependencies/
 git clone https://github.com/ElementsProject/elements
+cd elements
 git checkout alpha
 ./autogen.sh
 ./configure
