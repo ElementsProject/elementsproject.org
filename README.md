@@ -33,7 +33,7 @@ FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
 ON AN "AS IS" BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
 PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 ```
-# Elements (features under development)
+# Elements: features under investigation
 
 ## Elements currently in the alpha dev sidechain
 * item
@@ -43,16 +43,13 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
  * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
  * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
 
-# How to try the Dev Sidechain?
+# Alpha: Testnet Dev Sidechain Demo
 #### Source Code
 * https://github.com/ElementsProject/bitcoin - contains isolated feature and dev sidechains braches
  * [branch alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
 
 #### Development Discussion
 * https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev sidechains-dev discussion list
-
-# Alpha Testnet Dev Sidechain
-WRITE PARAGRAPH ABOUT IT HERE
 
 #### Build Instructions
 ```
