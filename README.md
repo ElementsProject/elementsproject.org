@@ -28,12 +28,21 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 # Elements: features under investigation
 
 ## Elements currently in the alpha dev sidechain
-* item
-* item
+###Confidential Transactions 
+*Principal Investigator: Greg Maxwell*
+
+One of the most powerful new features being explored in Elements is Confidential Transactions. This keeps the amounts transferred visible only to participants in the transaction (and those they designate), while still guaranteeing that no more coins can be spent than are available in a cryptographic way.
+
+This goes a step beyond the usual privacy offered by Bitcoin’s blockchain, which relies purely on pseudonymous - but public - identities. This matters, because insufficient financial privacy can have serious security and privacy implications for both commercial and personal transactions. Without adequate protection, thieves and scammers can focus their efforts on known high-value targets, competitors can learn business details, and negotiating positions can be undermined. 
+
+The most visible implication of Confidential Transactions is the introduction of a new address type (confidential addresses). These are longer than usual as they also includes a blinding key for the values. They are the default address type in Alpha.
+
+[Read the peer reviewed, technical details about Confidential Transactions](https://people.xiph.org/~greg/confidential_values.txt)
+* ADDME
 
 ## Proposed Elements
- * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - branch of ongoing assets dev 
- * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - branch of Bitmask Sighash modes
+ * [feature-assets](https://github.com/ElementsProject/bitcoin/tree/feature_assets) - EXAMPLE branch of ongoing assets dev 
+ * [feature-bitmasksighash](https://github.com/ElementsProject/bitcoin/tree/feature_bitmasksighash) - EXAMPLE branch of Bitmask Sighash modes
 
 # Testnet Dev Sidechain Demo: Elements Alpha
 To make it easy for the community to test the latest Elements, this project combines the best of them into dev sidechains.  The first release is Elements Alpha, a developer sidechain and network that introduces several new technologies on a sidechain, pegged to Bitcoin’s testnet. All code is open source, like Bitcoin itself, and others are encouraged to contribute to the project as we work to improve and add additional Elements.  Elements Alpha is intended to be a technology demo and testing environment.  Proposed Elements were not ready, and as a testnet development sidechain, this blockchain is intended to be short-lived and easily replaced as the technology evolves.
@@ -64,7 +73,7 @@ make
 The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin [Data Directory](https://en.bitcoin.it/wiki/Data_directory).  For example, in Linux `~/.bitcoin/alphatestnet3` contains the Alpha blocks, indicies and wallet.
 
 #### Moving coins between Testnet and Alpha
-PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... 
+FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... 
 
 * [testnet-faucet](https://testnet-faucet.elementsproject.org/)
 * [alpha-faucet](https://alpha-faucet.elementsproject.org/) - notice anything different about the addresses?
