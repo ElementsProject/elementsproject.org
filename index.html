@@ -16,29 +16,229 @@
   </head>
   <body>
     <div class="wrapper">
-      <style>header { padding: 35px 20px; }</style>
       <header>
         <h1>elementsproject.github.io</h1>
         <p>Open source code and developer sidechains for advancing Bitcoin</p>
-        <a href="https://github.com/ElementsProject/elements"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-        <p></p>
+        <p class="view"><a href="https://github.com/ElementsProject">View the Project on GitHub <small>ElementsProject</small></a></p>
+        <ul>
+          <li class="single"><a href="https://github.com/ElementsProject/elementsproject.github.io">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
       <section>
-        <h3>
-<a id="elements-project" class="anchor" href="#elements-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elements Project</h3>
+        <p><img src="http://i.imgur.com/Vbhiqop.png" alt="Sidechain Elements logo"></p>
 
-<p>Open source code and developer sidechains for advancing Bitcoin.</p>
+<p>Elements is an open source collaborative project where we work on a collection of experiments to more rapidly bring technical innovation to Bitcoin.  Elements are features that are proposed and developed in this technical community that in arbitrary combinations can be fashioned into sidechains.</p>
 
-<pre><code>$ cd ~/&lt;code dir&gt;
-$ git clone https://github.com/elementsproject/&lt;XXX&gt;
-$ cd &lt;XXX&gt;
-...
+<p><a href="http://www.blockstream.com/developers/"><img src="http://i.imgur.com/AsSENaW.png" alt="Greg Maxwell's Sidechain Elements Intro Video"></a></p>
+
+<p>“It's nice working on something without millions of BTCs resting on it, and still have a path to production use.”</p>
+
+<h2>
+<a id="current-elements" class="anchor" href="#current-elements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Elements</h2>
+
+<p>These are the features under currently under investigation as part of the Alpha dev sidechain.</p>
+
+<h4>
+<a id="confidential-transactions" class="anchor" href="#confidential-transactions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Confidential Transactions</h4>
+
+<p><em>Principal Investigator: Greg Maxwell</em> [<a href="https://people.xiph.org/%7Egreg/confidential_values.txt"><em>Peer reviewed technical details</em></a>]</p>
+
+<p>One of the most powerful new features being explored in Elements is Confidential Transactions. This keeps the amounts transferred visible only to participants in the transaction (and those they designate), while still guaranteeing that no more coins can be spent than are available in a cryptographic way.</p>
+
+<p>This goes a step beyond the usual privacy offered by Bitcoin’s blockchain, which relies purely on pseudonymous - but public - identities. This matters, because insufficient financial privacy can have serious security and privacy implications for both commercial and personal transactions. Without adequate protection, thieves and scammers can focus their efforts on known high-value targets, competitors can learn business details, and negotiating positions can be undermined. </p>
+
+<p>The most visible implication of Confidential Transactions is the introduction of a new address type (confidential addresses). These are longer than usual as they also includes a blinding key for the values. They are the default address type in Alpha.</p>
+
+<h4>
+<a id="segregated-witness" class="anchor" href="#segregated-witness" aria-hidden="true"><span class="octicon octicon-link"></span></a>Segregated Witness</h4>
+
+<p><em>Principal Investigator: Pieter Wuille</em></p>
+
+<p>In Alpha, the specification of a transaction’s effects on the ledger is separated from the data necessary to prove its validity (called a witness in cryptography). This completely eliminates all known forms of transaction malleability, and allows significant blockchain pruning optimizations.</p>
+
+<p>In Bitcoin, transactions contain both information about the effect on the ledger (UTXOs being spent, addresses, and amounts involved) and data proving that the transaction is authorized (input signatures). For Witness Segregation, transaction IDs are redefined to only depend on the effect information, and blocks commit separately to the witness data. This has several advantages:</p>
+
+<ul>
+<li>Bitcoin has seen some “Normalized Transaction ID” proposals, but these are effectively subsumed by Segregated Witness, which is both more efficient and more usable, as Normalized Transaction ID mechanisms still require rewriting dependent transactions after inputs are malleated. Such normalization is a necessary building block for higher-layer protocols such as Lightning.</li>
+<li>As transaction IDs no longer cover the signatures, they remove all forms of transaction malleability, in a much more fundamental way than BIP62 aims to do. This results in a larger class of multi-clause contract constructs that become safe to use.</li>
+<li>Potential for more efficient SPV output creation proofs (used by lightweight clients), as the signatures can be omitted from the transaction data without breaking the Merkle tree structure.
+Potential for nodes that do not wish to store or verify old transaction signatures, to remove the witness data from disk or not transfer it at all even, reducing blockchain storage/bandwidth amounts by a large factor. In Alpha, the witness data size is even more significant than in Bitcoin, as it also includes large range proofs for the output values.</li>
+</ul>
+
+<h4>
+<a id="relative-lock-time" class="anchor" href="#relative-lock-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relative Lock Time</h4>
+
+<p><em>Principal Investigator: Mark Friedenbach</em></p>
+
+<p>The consensus-enforced semantics of the sequence number field is modified to enable a signed transaction input to remain invalid for a defined period of time after confirmation of its corresponding output, for the purpose of supporting consensus-enforced transaction replacement features.</p>
+
+<p>Bitcoin has sequence number fields for each coin a transaction is spending. The original idea appears to have been that the highest sequence number should dominate and miners should prefer it over lower sequence numbers. This was never really implemented, and the half implemented code seemed to be making the assumption that miners would honestly prefer the higher sequence numbers, even if the lower ones were much more profitable. That turns out to be a dangerous assumption, and so most have assumed that kind of sequence number mediated replacement was useless because there was no way to enforce "honest" behaviour, as even a few rational (profit maximizing) miners would break that completely. This change provides the missing piece that makes sequence numbers do something with respect to enforcing transaction replacement without assuming anything other than profit-maximizing behaviour on the part of miners. A new opcode is added which enables Bitcoin scripts to check these constraints, CHECKSEQUENCEVERIFY.</p>
+
+<p>Relative lock-times can be used for all the same purposes as regular (absolute) lock-times, such as time-locked escrow services, but the relative form is of particular interest in applications where the blockchain is used as a communication medium. For example, the contest period of the two-way peg is most naturally expressed as a relative lock-time condition beginning with the transaction announcing the proof of withdraw.</p>
+
+<h4>
+<a id="schnorr-signature-validation" class="anchor" href="#schnorr-signature-validation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schnorr Signature Validation</h4>
+
+<p><em>Principal Investigator: Patrick Strateman</em></p>
+
+<p>Instead of DER-encoded ECDSA signatures over the secp256k1 curve, the CHECKSIG and related operators now use densely packed Schnorr signatures over the same curve. The advantages are:</p>
+
+<ul>
+<li>Efficient threshold signatures for n-of-n. Multiple Schnorr signatures can be combined to end up with a signature valid for the sum of the public keys, so arbitrarily large n-of-n multisig can be done by only communicating the single sum signature, which can be verified with a single CHECKSIG operation.</li>
+<li>Smaller signatures (64 bytes instead of 71-72) with none of the problems that DER encodings have caused for Bitcoin.
+Potential support for batch validation (up to a factor 2 speedup to verify groups of 32 signatures at once). This requires knowing the R.y coordinate (ECDSA ignores this) and at the script level, guaranteeing that all signature verification failure results in script failure (i.e., all CHECKSIG operators behave like CHECKSIGVERIFY).
+Stronger security proof.</li>
+<li>Provably no inherent signature malleability, while ECDSA has a known malleability, and lacks a proof that no other forms exist. Note that Witness Segregation already makes signature malleability not result in transaction malleability, however.</li>
+<li>Slightly faster to sign/verify than ECDSA.</li>
+</ul>
+
+<h4>
+<a id="new-opcodes" class="anchor" href="#new-opcodes" aria-hidden="true"><span class="octicon octicon-link"></span></a>New opcodes</h4>
+
+<p><em>Principal Investigator: Patrick Strateman</em></p>
+
+<p>Alpha enables several new script opcodes, in addition to the ones already supported by Bitcoin.</p>
+
+<ul>
+<li>Disabled opcodes. Bitcoin used to support a wider range of Script opcodes than exist now. Many were disabled for security reasons in 2010, and require a hard fork to re-enable them. Some of them had significant risks (unbounded memory usage), but not all of them. Alpha reintroduces these safe but disabled opcodes. They include string concatenation and substrings, integer shifts, and several bitwise operations.</li>
+<li>A new DETERMINISTICRANDOM operation which produces a random number within a range from a seed.</li>
+<li>A new CHECKSIGFROMSTACK operation which verifies a signature against a message on the stack, rather than the spending transaction itself.</li>
+</ul>
+
+<p>These new opcodes have several use cases, including double-spent protection bonds, lotteries, merkle tree constructions to allow 1-of-N multisig with huge N (thousands), and probabilistic payments.</p>
+
+<h4>
+<a id="signature-covers-value" class="anchor" href="#signature-covers-value" aria-hidden="true"><span class="octicon octicon-link"></span></a>Signature Covers Value</h4>
+
+<p><em>Principal Investigator: Glenn Willen</em></p>
+
+<p>The signatures verified by the CHECKSIG operators now cover the output value of spent inputs. This avoids the need for hardware signing devices to know the full previous transactions whose outputs are spent; if they are being lied to, the resulting signature is invalid anyway.</p>
+
+<p>A side effect of this change is that signing now needs to know the values (blinded or not) consumed by the transaction’s inputs.</p>
+
+<h4>
+<a id="deterministic-pegs" class="anchor" href="#deterministic-pegs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deterministic Pegs</h4>
+
+<p><em>Principal Investigator: Matt Corallo</em></p>
+
+<p>Deterministic pegs allow Elements Alpha to carry redeemable testnet coins without any modifications to testnet itself. Transfers into Alpha are validated by all full nodes, optionally with the assistance of an RPC call to a testnet node to validate blockchain membership without the presence of compressed SPV proofs in testnet. Transfers out of Alpha are performed by a federation of functionaries which are trusted to hold the coins for Alpha.</p>
+
+<p>Sidechains, like other alternative chains, can also be secured by merge-mining.  However during a bootstrap period of introduction of a new chain, unless the start of merge mining were very well synchronised, there will be a period of lower hashrate. During the early stages of this bootstrap the chain could have low enough hashrate to present a security risk even against a modest powered attacker. Given the challenges of synchronising something as organic and decentralised by design as bitcoin mining, we therefore need a mechanism to bootstrap chain security.  We start in this release with a threshold of functionaries and are plan for a later version to phase in merge-mining.</p>
+
+<h4>
+<a id="signed-blocks" class="anchor" href="#signed-blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Signed blocks</h4>
+
+<p><em>Principal Investigator: Jorge Timón</em></p>
+
+<p>SHA256d proof of work is replaced with the system’s scripting system, just signing blocks instead of transactions. In other words, the Dynamic Membership Multi-party Signature (DMMS) is replaced with a (Static Membership) Multi-party Signature. This has also been described in the past as “private chains” [<a href="http://freico.in/docs/freimarkets.pdf">http://freico.in/docs/freimarkets.pdf</a> ].</p>
+
+<p>The Elements Alpha release uses a threshold of functionaries as a protocol adaptor and also to sign blocks of transactions.  In a future release we plan to replace the block-signing with merge-mining, though the functionaries remain to communicate the transfer transactions to the main chain.   The Signed Blocks feature serves to provide transaction processing functionality until merge-mining is implemented.  Our intent is to later phase in the fully decentralised 2-way peg mechanism to replace the functionaries.</p>
+
+<h2>
+<a id="proposed-elements" class="anchor" href="#proposed-elements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proposed Elements</h2>
+
+<ul>
+<li>
+<a href="https://github.com/ElementsProject/elements/tree/feature_assets">feature-assets</a> - EXAMPLE branch of ongoing assets dev</li>
+<li>
+<a href="https://github.com/ElementsProject/elements/tree/feature_bitmasksighash">feature-bitmasksighash</a> - EXAMPLE branch of Bitmask Sighash modes</li>
+</ul>
+
+<h1>
+<a id="testnet-dev-sidechain-demo-elements-alpha" class="anchor" href="#testnet-dev-sidechain-demo-elements-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testnet Dev Sidechain Demo: Elements Alpha</h1>
+
+<p>To make it easy for the community to test the latest Elements, this project combines the best of them into dev sidechains.  The first release is Elements Alpha, a developer sidechain and network that introduces several new technologies on a sidechain, pegged to Bitcoin’s testnet. All code is open source, like Bitcoin itself, and others are encouraged to contribute to the project as we work to improve and add additional Elements.  Elements Alpha is intended to be a technology demo and testing environment.  Proposed Elements were not ready, and as a testnet development sidechain, this blockchain is intended to be short-lived and easily replaced as the technology evolves.</p>
+
+<p>Elements Alpha functions as a sidechain to Bitcoin’s testnet, though the peg mechanism currently works through a centralized protocol adapter, as described in the Sidechains whitepaper in appendix A. It relies on an auditable federation of signers to manage the testnet coins transferred into the sidechain (see the Deterministic Peg feature) and to produce blocks (see the Signed Block feature). This makes it possible to immediately explore the new chain’s possibilities, using different security trade-offs. We plan to, in a later release, upgrade the protocol adapter to support fully decentralized merge-mining of the sidechain, and ultimately to phase in the full 2-way pegging  mechanism.</p>
+
+<h4>
+<a id="source-code" class="anchor" href="#source-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source Code</h4>
+
+<ul>
+<li>
+<a href="https://github.com/ElementsProject/elements">https://github.com/ElementsProject/elements</a> - contains isolated feature and dev sidechains braches
+
+<ul>
+<li>
+<a href="https://github.com/ElementsProject/bitcoin/tree/alpha">branch alpha</a> - testnet dev sidechain demo</li>
+</ul>
+</li>
+</ul>
+
+<h4>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h4>
+
+<pre><code>Permission is hereby granted, without written agreement and without
+license or royalty fees, to use, copy, modify, and distribute this
+software and its documentation for any purpose, provided that the
+above copyright notice and the following two paragraphs appear in
+all copies of this software.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
+IF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+THE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+ON AN "AS IS" BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
+PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 </code></pre>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h4>
+<a id="development-discussion" class="anchor" href="#development-discussion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development Discussion</h4>
 
-<p><a href="https://github.com/apoelstra" class="user-mention">@apoelstra</a>, <a href="https://github.com/gmaxwell" class="user-mention">@gmaxwell</a>, <a href="https://github.com/gwillen" class="user-mention">@gwillen</a>, <a href="https://github.com/jonasschnelli" class="user-mention">@jonasschnelli</a>, <a href="https://github.com/jtimon" class="user-mention">@jtimon</a>, <a href="https://github.com/jwilkins" class="user-mention">@jwilkins</a>, <a href="https://github.com/kanzure" class="user-mention">@kanzure</a>, <a href="https://github.com/luke-jr" class="user-mention">@Luke-Jr</a>, <a href="https://github.com/maaku" class="user-mention">@maaku</a>, <a href="https://github.com/petertodd" class="user-mention">@petertodd</a>, <a href="https://github.com/pstratem" class="user-mention">@pstratem</a>, <a href="https://github.com/sipa" class="user-mention">@sipa</a>, <a href="https://github.com/TheBlueMatt" class="user-mention">@TheBlueMatt</a>, <a href="https://github.com/wtogami" class="user-mention">@wtogami</a></p>
+<ul>
+<li>Development Discussion List: <a href="https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev">sidechains-dev list</a>
+</li>
+<li>Freenode IRC: #sidechains-dev [<a href="http://webchat.freenode.net/?channels=%23sidechains-dev">webchat</a>]</li>
+<li>Bug Reports: Please submit issues to <a href="https://github.com/ElementsProject/elements/issues">github</a>.</li>
+<li>Pull Requests: Please submit pull requests <a href="https://github.com/ElementsProject/elements/pulls">github</a>.</li>
+</ul>
+
+<h4>
+<a id="build-instructions" class="anchor" href="#build-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build Instructions</h4>
+
+<pre><code># https://github.com/bitcoin/bitcoin/tree/master/doc
+# Please refer to the Bitcoin documentation to install the required build dependencies/
+git clone https://github.com/ElementsProject/elements
+git checkout alpha
+./autogen.sh
+./configure
+make
+# If your build was successful, you will find src/alphad, src/alpha-cli and src/qt/alpha-qt 
+
+</code></pre>
+
+<p>The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin <a href="https://en.bitcoin.it/wiki/Data_directory">Data Directory</a>.  For example, in Linux <code>~/.bitcoin/alphatestnet3</code> contains the Alpha blocks, indicies and wallet.</p>
+
+<h4>
+<a id="moving-coins-between-testnet-and-alpha" class="anchor" href="#moving-coins-between-testnet-and-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moving coins between Testnet and Alpha</h4>
+
+<p>FIXME: PARAGRAPH ABOUT PEG TRANSFER PROCESS HERE ... </p>
+
+<ul>
+<li><a href="https://testnet-faucet.elementsproject.org/">testnet-faucet</a></li>
+<li><a href="https://alpha-faucet.elementsproject.org/">alpha-faucet</a></li>
+</ul>
+
+<p>For your convenience, these faucets allow you to quickly obtain coins on either the testnet or alpha network without the lengthy wait for the confirmation and contest safety periods. (TODO: alpha-faucet currently gives you a rawtx that you need to submit manually with <code>sendrawtrasnsaction</code>.  We're working on it.)</p>
+
+<h1>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h1>
+
+<ul>
+<li>
+<em>Is this an altcoin?</em>  No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No coins are created elsewhere.</li>
+<li>ADDME</li>
+</ul>
+
+<h4>
+<a id="sidechain-elements-principal-investigators-and-contributors" class="anchor" href="#sidechain-elements-principal-investigators-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sidechain Elements Principal Investigators and Contributors</h4>
+
+<p><a href="https://github.com/apoelstra" class="user-mention">@apoelstra</a>, <a href="https://github.com/gmaxwell" class="user-mention">@gmaxwell</a>, <a href="https://github.com/gwillen" class="user-mention">@gwillen</a>, <a href="https://github.com/jonasschnelli" class="user-mention">@jonasschnelli</a>, <a href="https://github.com/jtimon" class="user-mention">@jtimon</a>, <a href="https://github.com/jwilkins" class="user-mention">@jwilkins</a>, <a href="https://github.com/kanzure" class="user-mention">@kanzure</a>, <a href="https://github.com/Luke-Jr" class="user-mention">@Luke-Jr</a>, <a href="https://github.com/maaku" class="user-mention">@maaku</a>, <a href="https://github.com/petertodd" class="user-mention">@petertodd</a>, <a href="https://github.com/pstratem" class="user-mention">@pstratem</a>, <a href="https://github.com/sipa" class="user-mention">@sipa</a>, <a href="https://github.com/TheBlueMatt" class="user-mention">@TheBlueMatt</a>, <a href="https://github.com/wtogami" class="user-mention">@wtogami</a></p>
       </section>
     </div>
     <footer>
