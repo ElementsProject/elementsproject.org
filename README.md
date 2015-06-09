@@ -10,7 +10,7 @@ Elements is an open source collaborative project where we work on a collection o
 These are the features under currently under investigation as part of the Alpha dev sidechain.
 
 ####Confidential Transactions 
-*Principal Investigator: Greg Maxwell* [[_Peer reviewed technical details_](https://people.xiph.org/~greg/confidential_values.txt)]
+*Principal Investigator: Greg Maxwell* [[_Peer reviewed technical details_](https://github.com/ElementsProject/elementsproject.github.io/blob/master/confidential_values.md)]
 
 One of the most powerful new features being explored in Elements is Confidential Transactions. This keeps the amounts transferred visible only to participants in the transaction (and those they designate), while still guaranteeing that no more coins can be spent than are available in a cryptographic way.
 
