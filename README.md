@@ -85,7 +85,7 @@ These are some of the features currently under development, but are yet ready fo
 
 #### Basic Asset Issuance
 *Principal Investigator: Jorge Timón*
- * [feature-assets](https://github.com/ElementsProject/elements/tree/feature_assets) - EXAMPLE branch of ongoing assets dev
+ * [feature branch multi-asset-0.10](https://github.com/ElementsProject/elements/tree/multi-asset-0.10) - branch of ongoing assets dev
 
 Users can issue their own assets which represent fungible ownership of the underlying asset type representing by the newly created units, which could theoretically represent any asset including vouchers, coupons, currencies, deposits, bonds, shares, etc (subject to the respective jurisdiction’s regulatory requirements. 
 
