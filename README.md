@@ -175,5 +175,8 @@ For your convenience, these faucets allow you to quickly obtain coins on either 
 * **Is this an altcoin?**   No.  The key thing to understand about sidechains is value is transferred to/from the main chain.  No new coins are created and the total money supply remains constant.
 * ADDME
 
-#### Sidechain Elements Principal Investigators and Contributors
-@apoelstra, @gmaxwell, @gwillen, @jonasschnelli, @jtimon, @jwilkins, @kanzure, @Luke-Jr, @maaku, @petertodd, @pstratem, @sipa, @TheBlueMatt, @wtogami
+
+#### Contributors and Sponsors
+[![Blockstream](https://static2.blockstream.com/wp-content/themes/blockstream/assets/images/logo-dark.png)](http://www.blockstream.com/)
+
+Sidechain Elements is an Open Source project sponsored by Blockstream, with contributions from @apoelstra, @gmaxwell, @gwillen, @jonasschnelli, @jtimon, @jwilkins, @kanzure, @Luke-Jr, @maaku, @petertodd, @pstratem, @sipa, @TheBlueMatt, @wtogami
