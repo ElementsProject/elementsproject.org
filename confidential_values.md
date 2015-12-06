@@ -92,8 +92,8 @@ property: commitments can be added, and the sum of a set of commitments
 is the same as a commitment to the sum of the data (with a blinding key
 set as the sum of the blinding keys):
 
-  C(BF1, data1) + C(BF2, data2) == C(BF1 + BF2, data1 + data2) C(BF1,
-  data1) - C(BF1, data1) == 0
+  C(BF1, data1) + C(BF2, data2) == C(BF1 + BF2, data1 + data2) 
+  C(BF1, data1) - C(BF1, data1) == 0
 
 In other words, the commitment preserves addition and the commutative
 property applies.
