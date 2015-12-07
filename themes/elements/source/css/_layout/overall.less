@@ -1,0 +1,110 @@
+/*
+
+  Page
+*/
+
+.site-page {
+  width: 50%;
+  max-width: 36em;
+  margin: 0 15%;
+}
+
+@media only screen and (max-width: @medium-max) {
+  .site-page {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: @small-max) {
+  .site-page {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+
+/*
+
+  Header
+*/
+
+.site-header {
+  margin: 3em 0 4.5em;
+}
+
+.site__title {
+  margin: 0;
+}
+
+.site__subtitle {
+  font-size: .75em;
+  line-height: 2;
+
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: @medium-max) {
+  .site__subtitle {
+    height: 2em;
+  }
+}
+
+
+
+
+/*
+
+  Body
+*/
+
+.page__title {
+  font-size: 2em;
+  line-height: .75;
+
+  margin: 1.5em 0 3em;
+}
+
+.page-post__title {
+  font-size: 2em;
+  line-height: .75;
+
+  margin: 1.5em 0 1.5em;
+}
+
+.page-post__body {
+  margin-bottom: 3em;
+}
+
+
+
+
+
+/*
+
+  Footer
+*/
+
+.site-footer {
+  overflow: auto;
+
+  margin: 1.5em 0 1.5em;
+
+  box-shadow: 0 -1px 0 0 @border-color;
+}
+
+.footer-nav__items {
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.footer-nav__item {
+  font-size: .75em;
+  line-height: 2;
+
+  display: block;
+  float: left;
+
+  margin-right: 1.5em;
+}

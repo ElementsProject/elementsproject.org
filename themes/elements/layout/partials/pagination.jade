@@ -1,0 +1,10 @@
+nav.pagination
+  - if(page.prev) {
+    a.entry-pagination__link.entry-pagination__link--prev(href=url_for(page.prev.path), title=page.prev.title)
+      != "&#10094; " + __("prev")
+  - }
+
+  - if(page.next) {
+    a.entry-pagination__link.entry-pagination__link--next(href=url_for(page.next.path), title=page.next.title)
+      != __("next") + " &#10095;"
+  - }

@@ -1,0 +1,12 @@
+extends layouts/elements
+
+prepend site-title
+  | #{page.title} &mdash;&nbsp;
+
+block content
+  .ui.main.text.container
+    h2 #{page.title}
+    
+    include partials/menu
+
+    .content !{page.content}

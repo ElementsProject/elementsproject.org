@@ -1,0 +1,12 @@
+mixin postDate(date)
+  = date.format(config.date_format)
+
+mixin postCategory(categories)
+
+  if categories.length > 0
+    |  in
+    - categories.each(function(category){
+      | &ensp;
+      a(href=config.root + category.path)
+        = category.name
+    - })

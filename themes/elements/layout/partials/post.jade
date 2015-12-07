@@ -1,0 +1,8 @@
+h2 #{page.title}
+
+.post-meta
+  include meta
+  +postDate(page.date)
+  +postCategory(page.categories)
+
+.post-body  !{page.content}

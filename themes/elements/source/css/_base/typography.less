@@ -1,0 +1,323 @@
+/*
+
+  Custom Typeface
+*/
+
+@font-face {
+  font-family: "Clear Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("@{typeface-path}clear_sans/ClearSans-Regular.eot");
+  src: url("@{typeface-path}clear_sans/ClearSans-Regular.eot") format("embedded-opentype"),
+  url("@{typeface-path}clear_sans/ClearSans-Regular.woff") format("woff"),
+  url("@{typeface-path}clear_sans/ClearSans-Regular.ttf") format("truetype"),
+  url("@{typeface-path}clear_sans/ClearSans-Regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  font-weight: 200;
+  font-style: normal;
+
+  src: url("@{typeface-path}clear_sans/ClearSans-Thin.eot");
+  src: url("@{typeface-path}clear_sans/ClearSans-Thin.eot") format("embedded-opentype"),
+  url("@{typeface-path}clear_sans/ClearSans-Thin.woff") format("woff"),
+  url("@{typeface-path}clear_sans/ClearSans-Thin.ttf") format("truetype"),
+  url("@{typeface-path}clear_sans/ClearSans-Thin.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  font-weight: 400;
+  font-style: italic;
+
+  src: url("@{typeface-path}clear_sans/ClearSans-Italic.eot");
+  src: url("@{typeface-path}clear_sans/ClearSans-Italic.eot") format("embedded-opentype"),
+  url("@{typeface-path}clear_sans/ClearSans-Italic.woff") format("woff"),
+  url("@{typeface-path}clear_sans/ClearSans-Italic.ttf") format("truetype"),
+  url("@{typeface-path}clear_sans/ClearSans-Italic.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  font-weight: 800;
+  font-style: normal;
+
+  src: url("@{typeface-path}clear_sans/ClearSans-Bold.eot");
+  src: url("@{typeface-path}clear_sans/ClearSans-Bold.eot") format("embedded-opentype"),
+  url("@{typeface-path}clear_sans/ClearSans-Bold.woff") format("woff"),
+  url("@{typeface-path}clear_sans/ClearSans-Bold.ttf") format("truetype"),
+  url("@{typeface-path}clear_sans/ClearSans-Bold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  font-weight: 800;
+  font-style: italic;
+
+  src: url("@{typeface-path}clear_sans/ClearSans-BoldItalic.eot");
+  src: url("@{typeface-path}clear_sans/ClearSans-BoldItalic.eot") format("embedded-opentype"),
+  url("@{typeface-path}clear_sans/ClearSans-BoldItalic.woff") format("woff"),
+  url("@{typeface-path}clear_sans/ClearSans-BoldItalic.ttf") format("truetype"),
+  url("@{typeface-path}clear_sans/ClearSans-BoldItalic.svg") format("svg");
+}
+
+
+/*
+
+	Base
+*/
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+@media only screen and (max-width: @medium-max) {
+  body {
+    font-size: @font-size-medium;
+  }
+}
+
+@media only screen and (max-width: @small-max) {
+  body {
+    font-size: @font-size-small;
+  }
+}
+
+
+/*
+
+	Headings
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @font-family-base;
+  font-weight: 200;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1;
+
+  margin: 2em 0 1em;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+
+  margin: 2.4em 0 1.2em;
+}
+
+
+
+
+/*
+
+	Paragraphs
+*/
+
+p,
+address {
+  font-size: 1em;
+
+  margin: 0 0 1.5em;
+}
+
+p img {
+  margin: 0;
+}
+
+
+
+
+/*
+
+	Emphasis
+*/
+
+cite,
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+b,
+strong,
+dt,
+legend {
+  font-weight: bold;
+}
+
+small {
+  font-size: .75em;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+ins {
+  color: #FF0000;
+}
+
+
+
+/*
+
+	Form
+*/
+
+form,
+legend,
+label {
+  font-size: 1em;
+}
+
+
+
+
+/*
+
+  Table
+*/
+
+table caption,
+tfoot {
+  font-size: .75em;
+  line-height: 2;
+}
+
+thead {
+  font-weight: bold;
+}
+
+
+
+/*
+
+  Code
+*/
+
+code,
+kbd,
+samp,
+pre,
+tt,
+var {
+  font-family: @font-family-code;
+  font-weight: 400;
+}
+
+pre {
+  font-size: .75em;
+  line-height: 2;
+
+  overflow: auto;
+
+  margin: 0 0;
+
+  white-space: pre;
+}
+
+pre code {
+  background: @code-background;
+
+  display: block;
+  overflow: auto;
+
+  margin-bottom: 2em;
+  padding: 0 .75em;
+}
+
+p code {
+  line-height: 1;
+}
+
+
+
+
+/*
+
+  Quote
+*/
+
+blockquote {
+  position: relative;
+
+  padding-left: 1.5em;
+
+  color: @light-black;
+  border-left: dotted .075em @border-color;
+}
+
+blockquote p {
+  font-size: 1em;
+
+  position: relative;
+}
+
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+
+
+/*
+
+  Others
+*/
+
+abbr,
+acronym {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+abbr[title],
+acronym[title],
+dfn[title] {
+  cursor: help;
+
+  border-bottom: .075em dotted @border-color;
+}
+
+
+
+hr {
+  height: 1.5em;
+
+  border: none;
+  border-top: dotted .075em @border-color;
+}

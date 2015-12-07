@@ -1,0 +1,11 @@
+extends layouts/elements
+
+prepend site-title
+  | Archive &mdash;&nbsp;
+
+block content
+  h2 Archive
+
+  include partials/list
+
+  include partials/list-pagination
