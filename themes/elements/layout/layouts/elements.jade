@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+
+  head
+    include ../partials/head
+
+  body
+    block header
+      .ui.large.top.fixed.hidden.menu
+        .ui.container
+          .active.item Home
+          .item Elements
+          .item Sidechains
+          
+          .right.menu
+            .item
+              a.ui.button test
+    
+    block content
+
+    block footer
+      include ../partials/footer

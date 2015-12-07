@@ -1,0 +1,206 @@
+/*
+
+	Basic
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: @body-background;
+
+  color: @body-text;
+}
+
+
+
+/*
+
+	Links
+*/
+
+a,
+a:visited {
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color  .2s ease-in;
+  text-decoration: none;
+
+  color: @active-link;
+  outline: 0;
+}
+
+a:visited {
+  color: @visited-link;
+}
+
+a:hover,
+a:focus {
+  color: @hover-link;
+}
+
+p a,
+p a:visited {
+  line-height: inherit;
+}
+
+
+
+/*
+
+	Lists
+*/
+
+ul,
+ol,
+dl {
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li ul,
+li ol,
+ul ul,
+ol ol {
+  top: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.175em;
+}
+
+li h1,
+li h2,
+li h3,
+li h4,
+li h5,
+li h6,
+li p {
+  margin-top: 0;
+}
+
+
+/*
+
+  Table
+*/
+
+td {
+  padding: 0 0.375em;
+}
+
+
+
+/*
+
+	Images
+*/
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+
+
+
+
+/*
+
+	Miscs
+*/
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+.is-hidden {
+  display: none;
+}
+
+
+
+
+#googlemap img,
+object,
+embed {
+  max-width: none;
+}
+
+#map_canvas embed {
+  max-width: none;
+}
+
+#map_canvas img {
+  max-width: none;
+}
+
+#map_canvas object {
+  max-width: none;
+}
+
+
+
+.remove-bottom {
+  margin-bottom: 0 !important;
+}
+
+.half-bottom {
+  margin-bottom: .75em !important;
+}
+
+.add-bottom {
+  margin-bottom: 1.5em !important;
+}
+
+
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.quarter-width {
+  width: 25%;
+}
+
+.one-third-width {
+  width: 33.333%;
+}

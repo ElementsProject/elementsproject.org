@@ -1,4 +1,13 @@
+---
+title: Get Involved
+---
 ## Contributing to the Elements Project
+<div class="ui vertical stripe segment" style="padding: 0;">
+  <h3 class="ui header">Join the Community.</h3>
+  <p>Our public Slack is the fastest way to get connected with other contributors to the Elements Project.  We'll send an invitation to your email address.</p>
+  <a href="https://chat.elementsproject.org/" class="ui button primary huge" style="float:right;">Get an Invite<i class="icon right chevron"></i></a>
+</div>
+
 #### Source Code
 * https://github.com/ElementsProject/elements - contains isolated feature and dev sidechains braches
  * [branch alpha](https://github.com/ElementsProject/bitcoin/tree/alpha) - testnet dev sidechain demo
