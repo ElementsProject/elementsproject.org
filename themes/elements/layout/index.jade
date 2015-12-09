@@ -10,12 +10,16 @@ block content
         h1.ui.inverted.header The Elements Project
         h2 Extending Bitcoin with Sidechains
 
+        //-form.ui.large.form(action="https://chat.elementsproject.org/invite", method="POST")
+          .inline.field(style="margin-top: 1em;")
+            input(type="email", name="email")
+            button.ui.primary.button(type="submit")
+              | Join the Community
+              i.icon.right.chevron
+            
         a.ui.huge.primary.button(href="https://chat.elementsproject.org", style="margin-top: 1em;")
           | Join the Community
           i.icon.right.chevron
-          
-        .item
-          script(async, defer, src="https://community.ericmartindale.com/slackin.js?large")
 
     .ui.vertical.stripe.segment
       .ui.middle.aligned.stackable.grid.container

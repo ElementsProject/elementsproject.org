@@ -4,9 +4,12 @@ prepend site-title
   | #{page.title} &mdash;&nbsp;
 
 block content
+  
+  include partials/menu
+  
   .ui.main.text.container
+    include partials/edit-self
+
     h2 #{page.title}
-    
-    include partials/menu
 
     .content !{page.content}

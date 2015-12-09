@@ -1,5 +1,8 @@
 ---
 title: Confidential Transactions
+description: Obscure the transaction value using the Confidential Transactions Element. 
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/confidential-transactions/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/confidential-transactions/index.md
 ---
 One of the most powerful new features being explored in Elements is Confidential
 Transactions.  This keeps the amounts transferred visible only to participants in

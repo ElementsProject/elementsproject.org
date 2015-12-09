@@ -1,0 +1,29 @@
+extends layouts/elements
+
+prepend site-title
+  | #{page.title} &mdash;&nbsp;
+
+block content
+  
+  include partials/menu
+  
+  .ui.main.text.container
+    .ui.cards
+      - site.posts.each(function(post, i) {
+        a.ui.fluid.card(href="#{post.path}")
+          .content
+            .header #{post.title}
+            .meta
+              .right.floated.time #{post.date}
+            .description
+              p !{post.excerpt}
+          .extra.content
+            if (post.author)
+              a.right.floated.author(href="/people/#{post.author}")
+                img.ui.avatar.image(src="/img/#{post.author}.png")
+                |  #{post.author}
+                
+            .left.floated.star
+              i.icon.star
+              
+      - });
