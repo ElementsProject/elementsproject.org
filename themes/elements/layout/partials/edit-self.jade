@@ -1,9 +1,8 @@
-.ui.right.floated.buttons
-  if (page && page.edit && page.source)
-    a.ui.button.tooltipped(href="#{page.edit}", title="Launch an editor to change content on this page.")
-      i.icon.pencil
-      | edit this page
-    .or
-    a.ui.button.tooltipped(href="#{page.source}", title="View the original content used to generate this page.")
-      i.icon.code
-      | view the source
+if (page && page.edit && page.source)
+  a.ui.button.tooltipped(href="#{page.edit}", title="Launch an editor to change content on this page.")
+    i.icon.pencil
+    | edit this page
+  .or
+  a.ui.button.tooltipped(href="#{page.source}", title="View the original content used to generate this page.")
+    i.icon.code
+    | view the source
