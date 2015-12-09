@@ -8,8 +8,18 @@ block content
   include partials/menu
   
   .ui.main.text.container
-    include partials/edit-self
-
+    .ui.right.floated.buttons
+      include partials/edit-self
+  
+  .ui.main.text.container
     h2 #{page.title}
+    .meta posted
+      if (page.author)
+        |  by 
+        include partials/author
+      |  on 
+      abbr.time #{page.date}
+
+    hr
 
     .content !{page.content}

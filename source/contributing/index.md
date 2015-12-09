@@ -1,11 +1,15 @@
 ---
-title: Get Involved
+title: Get Involved.
+subtitle: Contributing to the Elements Project
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/contributing/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/contributing/index.md
 ---
-## Contributing to the Elements Project
-<div class="ui vertical stripe segment" style="padding: 0;">
+
+<div class="ui vertical stripe segment" style="padding: 0; border: 0;">
   <h3 class="ui header">Join the Community.</h3>
   <p>Our public Slack is the fastest way to get connected with other contributors to the Elements Project.  We'll send an invitation to your email address.</p>
   <a href="https://chat.elementsproject.org/" class="ui button primary huge" style="float:right;">Get an Invite<i class="icon right chevron"></i></a>
+  <div style="clear: both;"></div>
 </div>
 
 #### Source Code
@@ -18,9 +22,9 @@ title: Get Involved
 * Bug Reports: Please submit issues to [github](https://github.com/ElementsProject/elements/issues).
 * Pull Requests: Please submit pull requests to [github](https://github.com/ElementsProject/elements/pulls).
 
-
 #### Build Instructions
-```
+
+<pre style="overflow: inherit;">
 # https://github.com/bitcoin/bitcoin/tree/master/doc
 # Please refer to the Bitcoin documentation to install the required build dependencies/
 git clone https://github.com/ElementsProject/elements
@@ -30,8 +34,7 @@ git checkout alpha
 ./configure
 make
 # If your build was successful, you will find src/alphad, src/alpha-cli and src/qt/alpha-qt 
-
-```
+</pre>
 
 The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin [Data Directory](https://en.bitcoin.it/wiki/Data_directory).  For example, in Linux `~/.bitcoin/alphatestnet3` contains the Alpha blocks, indicies and wallet.
 

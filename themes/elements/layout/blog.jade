@@ -9,20 +9,18 @@ block content
   
   .ui.main.text.container
     .ui.cards
-      - site.posts.each(function(post, i) {
-        a.ui.fluid.card(href="#{post.path}")
+      - site.posts.each(function(page, i) {
+        a.ui.fluid.card(href="#{page.path}")
           .content
-            .header #{post.title}
+            .header #{page.title}
             .meta
-              .right.floated.time #{post.date}
+              .right.floated.time #{page.date}
             .description
-              p !{post.excerpt}
+              p !{page.excerpt}
           .extra.content
-            if (post.author)
-              a.right.floated.author(href="/people/#{post.author}")
-                img.ui.avatar.image(src="/img/#{post.author}.png")
-                |  #{post.author}
-                
+            .right.floated.meta
+              if (page.author)
+                include partials/author
             .left.floated.star
               i.icon.star
               
