@@ -20,6 +20,14 @@ Sidechain Developer Community][contributing].**  We're hoping this community
 will facilitate discussion around how various Elements are being used, including
 known efforts by companies like Gem and RootStock.
 
+### What are Elements?
+Elements are bundles of code that extend Bitcoin functionality, and today's
+release includes new developer documentation on how the existing Elements work,
+in addition to [a new community-managed index of available
+Elements][element-list].  Everything on the Elements Project website is stored
+in [the ElementsProject.org GitHub repository][github] and can be edited and
+contributed to by the community. We hope that you will join us.
+
 ### A Publicly Editable Resource
 We've made the entire Elements Project website a [publicly editable
 resource][github], and even added simple buttons to most pages that link
@@ -46,21 +54,12 @@ Sidechains Gateway configuration page][sidechains-gateways].
   <div style="clear: both;"></div>
 </div>
 
-
-### What are Elements?
-Elements are bundles of code that extend Bitcoin functionality, and today's
-release includes new developer documentation on how the existing Elements work,
-in addition to [a new community-managed index of available
-Elements][element-list].  Everything on the Elements Project website is stored
-in [the ElementsProject.org GitHub repository][github] and can be edited and
-contributed to by the community. We hope that you will join us.
-
 ### Next Steps
 Segregated Witness has been deployed on [the `alpha` sidechain for some
 time][alpha], but as the first Element that is likely to make its way into
-Bitcoin Core it is important that it undergoes rigorous review.  Discussion is
-ongoing in the Developer Mailing list, but you can use it today by [getting
-connected to the alpha network][alpha-moving-coins].
+Bitcoin Core, it is important that it undergoes rigorous review.  Discussion is
+ongoing in [the Developer Mailing list][sidechains-list], but you can use it today by [getting
+connected to the `alpha` network][alpha-moving-coins].
 
 Until then, [join the Sidechains chat][slack] and get acquainted with your fellow
 developers!
@@ -78,3 +77,4 @@ developers!
 [alpha]: https://www.elementsproject.org/sidechains/alpha
 [alpha-build]: https://www.elementsproject.org/sidechains/alpha#Build_Instructions
 [alpha-moving-coins]: https://www.elementsproject.org/sidechains/alpha#Moving_coins_between_Testnet_and_Alpha
+[sidechains-list]: https://lists.linuxfoundation.org/mailman/listinfo/sidechains-dev
