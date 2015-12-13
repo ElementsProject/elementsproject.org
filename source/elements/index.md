@@ -104,34 +104,8 @@ These are the features under currently under investigation as part of the Alpha 
   </a>
 </div>
 
-#### [Confidential Transactions](/elements/confidential-transactions)
-The Confidential Transactions Element keeps the amounts transferred in a
-blockchain-backed transaction visible only to participants in that transaction,
-while still guaranteeing that no more coins can be spent than are available in a
-cryptographic way.
-
-<a href="/elements/confidential-transactions" style="float:right;">Learn More &raquo;</a>
-
-#### [Segregated Witness](/elements/segregated-witness)
-
-#### [Relative Lock Time](/elements/relative-lock-time)
-
-#### [Schnorr Signature Validation](/elements/schnorr-signatures)
-
-#### [New opcodes](/elements/opcodes)
-
-#### [Signature Covers Value](/elements/signature-covers-value)
-
-#### [Deterministic Pegs](/elements/deterministic-pegs)
-
-#### [Signed blocks](/elements/signed-blocks)
-
 ## Proposed Elements
 These are some of the features currently under development, but are yet ready for testing in dev sidechain.
-
-#### [Basic Asset Issuance](/elements/asset-issuance)
-
-#### [Bitmask Sighash Modes](/elements/bitmask-sighash-modes)
 
 <div class="ui four cards">
   <a class="card" href="/elements/asset-issuance">
