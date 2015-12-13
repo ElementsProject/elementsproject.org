@@ -10,18 +10,18 @@ block content
   .ui.main.text.container
     .ui.cards
       - site.posts.each(function(page, i) {
-        a.ui.fluid.card(href="#{page.path}")
+        .ui.fluid.card
           .content
-            .header #{page.title}
             .meta
               .right.floated.time #{page.date}
+            a.header(href="#{page.path}") #{page.title}
             .description
               p !{page.excerpt}
           .extra.content
             .right.floated.meta
-              if (page.author)
-                include partials/author
-            .left.floated.star
-              i.icon.star
-              
+              a.ui.button(href="#{page.path}") Read More
+                i.icon.chevron.right
+            if (page.author)
+              include partials/author
+            
       - });
