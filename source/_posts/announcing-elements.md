@@ -1,75 +1,59 @@
 ---
-title: Announcing Sidechain Elements: Open source code and developer sidechains for advancing Bitcoin
-source:
-github: 
+title: Announcing the New Elements Project
+subtitle: Open source code and developer sidechains for advancing Bitcoin.
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/_posts/announcing-elements.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/_posts/announcing-elements.md
+author: martindale
 ---
-We're excited to announce the release of Sidechain Elements. Sidechains extend
-Bitcoin functionality through interoperable blockchain networks and today's open
-source release includes an
-experime[![elements_logo](https://www.blockstream.com/wp-content/uploads/2015/06/elements_logo-300x78.png)](https://www.blockstream.com/wp-content/uploads/2015/06/elements_logo.png)ntal
-sidechain that has a number of new working capabilities. With the release of
-Sidechain Elements, Blockstream is moving this effort into the community. We're
-inviting developers to work with us, to test and use the code for their
-projects, and to share their proposals and code for additional capabilities.
 
-Sidechains are decentralized, peer-to-peer networks that provide useful
-security, risk, and performance enhancements for global systems of value
-exchange that don't need intermediaries, central banks or other third parties.
-They are distributed ledgers that are interoperable with each other and with
-Bitcoin, leveraging the most secure blockchain and code infrastructure in an
-additive way. Sidechains enable innovators to safely develop new applications
-without jeopardizing Bitcoin's core code and putting billions of dollars worth
-of digital currency at risk.
+We're excited to announce the release of [the New Elements Project][elements].
+The Elements Project is a community effort to create and test new extensions to
+the Bitcoin protocol.  Core Developers have already announced several of these
+new Elements, including [Confidential Transactions][confidential-transactions]
+by Gregory Maxwell and [Segregated Witness][segregated-witness] by Pieter
+Wuille.
 
-We began our work on sidechains almost one year ago first through extensive
-discussions and debate with others in the technical community, and then in the
-publication of a
-[whitepaper](https://www.blockstream.com/2014/10/23/why-we-are-co-founders-of-blockstream/
-"Why we co-founded Blockstream") and [launch of
-Blockstream](https://www.blockstream.com/2014/11/17/blockstream-closes-21m-seed-round/
-"Blockstream closes $21M seed round"). Over the past several months, we've been
-coding and testing initial implementations all in preparation for today's
-release.
+Along with this new release comes three new community initiatives: **A New
+Sidechain Developer Community**, **A New Developer Sidechain, "Bedrock"**, and
+**The Bitcoin Incubator Project**.
 
-Sidechain Elements consists of several components: the core network software to
-build an initial testing sidechain, eight new features not currently supported
-by Bitcoin, a basic wallet, and the code for moving coins between blockchains.
-We've selected a collection of elements chosen to be both exciting and useful to
-three audiences with overlapping interests: the broader Bitcoin community; core
-technologists and smart-contract programmers; and businesses just starting to
-explore blockchain use cases. The new elements include Confidential
-Transactions, Basic Asset Issuance, Relative Lock Time and several others. We've
-posted a video of our CTO, Greg Maxwell, walking through all of new
-capabilities.
+### New Sidechain: Bedrock
+Bedrock is a new sidechain that implements _______ and ______, two Elements that
+were not previously available on Alpha, our previous developer sidechain.  Alpha
+will continue to operate and be maintained, but we encourage all developers to
+begin using and testing with the Bedrock sidechain.  Many consensus-critical
+changes are included in the new sidechain, and future work will be based on the
+`betanet` branch on GitHub.
 
-The initial sidechain included in Sidechain Elements works on a federated
-security model; while it's still peer-to-peer and consensus-based, security for
-the blockchain is provided by a set of predefined functionaries in an
-arrangement called a Fed-Peg. A number of academic groups and individual
-contributors have agreed to run the Sidechain Elements Fed-Peg, including
-blockchain groups at Stanford, MIT, and Princeton. The sidechain does not
-include mining or proof-of-work at this point.
+### Sidechain Developer Community
+We've created [a new public Slack chat][slack] dedicated to connecting
+developers working on Elements-related projects.  Slack is a convenient medium
+for communication with a broader community, and does not supplant the in-depth
+technical discussion that takes place in the #sidechains-dev channel on IRC.  In
+fact, we've even opened up IRC access (SSL only) to the Sidechains Developer
+Slack, for which you can find connection details on [the Sidechains Gateway
+configuration page][sidechains-gateways].
 
-In the coming weeks, we'll be publishing an early draft of a proposal for a
-fully decentralized, two-way peg and merge-mined sidechains, which will enable
-us to test other types of sidechain functionality.
+### The Bitcoin Incubator Project
+With the support of Bitcoin Core Lead Developer Wladimir van der Laan, we are
+pleased to announce that a new initiative for testing changes to Bitcoin Core
+has begun.  Elements that "graduate" from testnet status will enter a new
+incubation period on testnet before their deployment on the main Bitcoin
+network.  We hope this forms a clear path for repeatable, tested iterations and
+improvements on the Bitcoin Protocol that will benefit users of all interests.
 
-Sidechains are an emerging technology, and this work is in its early stages. The
-code and working sidechain provide a basis for research and prototyping. We'll
-undertake many of these efforts, and anticipate many others will happen
-independent of Blockstream with over 30 major financial institutions launching
-blockchain innovation projects, as well as interest in this tech from other
-Bitcoin and blockchain-based ventures.
+### What are Elements?
+Elements are bundles of code that extend Bitcoin functionality, and today's
+release includes new developer documentation on how the existing Elements work,
+in addition to [a new community-managed index of available
+Elements][element-list].  Everything on the Elements Project website is stored
+in [the ElementsProject.org GitHub repository][github] and can be edited and
+contributed to by the community. We hope that you will join us.
 
-**Here be dragons:** While much of the underlying science isn't new, this is an
-alpha code release. We've intentionally focused on a Testnet sidechain and
-strongly urge others to avoid implementations that involve bitcoin or other
-real-world assets. Fiduciary code like this requires significant peer review
-before moving onto production environments.
-
-Sidechain Elements is available under the MIT open source license, along with
-initial documentation, on Blockstream's code repo. We'll make ourselves
-available to work with developers, and we invite the technical community to join
-the discussion and get involved in moving sidechains and distributed ledger
-technology forward. Complete info and links can be found on our new
-[Developers](https://blockstream.com/developers/) page.
+[elements]: https://www.elementsproject.org/
+[slack]: https://chat.elementsproject.org/
+[confidential-transactions]: https://www.elementsproject.org/elements/confidential-transactions
+[segregated-witness]: https://www.elementsproject.org/elements/segregated-witness
+[sidechains-gateways]: https://sidechains.slack.com/account/gateways
+[element-list]: https://www.elementsproject.org/elements/
+[github]: https://github.com/ElementsProject/elementsproject.org
