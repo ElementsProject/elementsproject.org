@@ -7,11 +7,11 @@ title: Sidechains
 The Elements Project, supported by Blockstream, runs and maintains a number of
 sidechains.
 
-## Experimental Chains
+## Experimental Sidechains
 ### [alpha](/sidechains/alpha)
-### [beta](/sidechains/beta)
+<!-- ### [beta](/sidechains/beta) -->
 
-## Production Chains
+## Production Sidechains
 ### [Liquid](/sidechains/liquid)
 Run by Blockstream, Liquid is a production sidechain that is secured by
 federated consensus rather than proof-of-work.
