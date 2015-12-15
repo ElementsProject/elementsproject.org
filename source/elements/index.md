@@ -4,6 +4,12 @@ source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/s
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/index.md
 ---
 
+<style type="text/css">
+  img {
+    max-width: 100%;
+  }
+</style>
+
 Elements is an open source collaborative project where we work on a collection of experiments to more rapidly bring technical innovation to Bitcoin.  Elements are features that are proposed and developed in this technical community that in arbitrary combinations can be fashioned into sidechains.
 
 <center>
