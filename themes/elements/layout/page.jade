@@ -12,5 +12,7 @@ block content
       include partials/edit-self
 
     h2 #{page.title}
+    if (page.description)
+      h3 #{page.description}
 
     .content !{page.content}

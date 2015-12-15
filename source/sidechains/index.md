@@ -13,5 +13,5 @@ sidechains.
 
 ## Production Sidechains
 <h3>[Liquid](/sidechains/liquid)</h3>
-Run by Blockstream, Liquid is a production sidechain that is secured by
+Run by a federation of block signers, Liquid is a production sidechain that is secured by
 federated consensus rather than proof-of-work.
