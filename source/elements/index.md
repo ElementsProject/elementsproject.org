@@ -13,7 +13,7 @@ Elements is an open source collaborative project where we work on a collection o
 ## Current Elements
 These are the features under currently under investigation as part of the Alpha dev sidechain.
 
-<div class="ui four cards">
+<div class="ui four doubling cards">
   <a class="card" href="/elements/confidential-transactions">
     <div class="image">
       <img src="/img/square-image.png" />
@@ -107,7 +107,7 @@ These are the features under currently under investigation as part of the Alpha 
 ## Proposed Elements
 These are some of the features currently under development, but are yet ready for testing in dev sidechain.
 
-<div class="ui four cards">
+<div class="ui four doubling cards">
   <a class="card" href="/elements/asset-issuance">
     <div class="image">
       <img src="/img/square-image.png" />
