@@ -1,4 +1,10 @@
-#### Signed blocks
+---
+title: Signed Blocks
+description: Blocks can be cryptographically signed, allowing the creator of the block to verify their identity in the future.
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/signed-blocks/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/signed-blocks/index.md
+---
+
 *Principal Investigator: Jorge Timón*
 
 SHA256d proof of work is replaced with the system’s scripting system, just signing blocks instead of transactions. In other words, the Dynamic Membership Multi-party Signature (DMMS) is replaced with a (Static Membership) Multi-party Signature. This has also been described in the past as “private chains” [http://freico.in/docs/freimarkets.pdf ].

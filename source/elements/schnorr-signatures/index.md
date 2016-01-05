@@ -1,4 +1,10 @@
-#### Schnorr Signature Validation
+---
+title: Schnorr Signature Validation
+description: A new way of constructing signatures for transactions, both improving efficiency of validating a transaction and offering new modes of multi-signature.
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/schnorr-signatures/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/schnorr-signatures/index.md
+---
+
 *Principal Investigator: Patrick Strateman*
 
 Instead of DER-encoded ECDSA signatures over the secp256k1 curve, the CHECKSIG and related operators now use densely packed Schnorr signatures over the same curve. The advantages are:
