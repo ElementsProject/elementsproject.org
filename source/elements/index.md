@@ -20,7 +20,7 @@ Elements is an open source collaborative project where we work on a collection o
 These are the features under currently under investigation as part of the Alpha dev sidechain.
 
 <div class="ui four doubling cards">
-  <a class="card" href="/elements/confidential-transactions">
+  <a class="card tooltipped" title="Confidential Transactions are a new type of transaction that allow the amount of tokens being transferred to be concealed, but mathematically proven." href="/elements/confidential-transactions">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -31,7 +31,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/segregated-witness">
+  <a class="card tooltipped" title="Segregated Witness creates a separate data structure for the signature on a single transaction, fixing transaction malleability and decreasing the amount space required for storage." href="/elements/segregated-witness">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -42,7 +42,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/relative-lock-time">
+  <a class="card tooltipped" title="Relative Lock Time allows a transaction to be time-locked, preventing its use in a new transaction until a relative time (generally, block height) is reached." href="/elements/relative-lock-time">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -53,7 +53,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/schnorr-signatures">
+  <a class="card tooltipped" title="Schnorr Signatures are a new way of constructing signatures for transactions, both improving performance of validating a transaction and offering new modes of multi-signature." href="/elements/schnorr-signatures">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -64,7 +64,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/opcodes">
+  <a class="card tooltipped" title="Many new opcodes are being tested, and are being hailed as 'Script 2.0'." href="/elements/opcodes">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -75,7 +75,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/signature-covers-value">
+  <a class="card tooltipped" title="This allows the signature on a transaction to be invalidated if the inputs have been spent, making it faster and easier to validate a transaction, simply by checking its signature." href="/elements/signature-covers-value">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -86,7 +86,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/deterministic-pegs">
+  <a class="card tooltipped" title="Deterministic Pegs allow cross-chain transactions to be constructed in a decentralized fashion.  Tokens can be moved from one blockchain to another." href="/elements/deterministic-pegs">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -97,7 +97,7 @@ These are the features under currently under investigation as part of the Alpha 
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/signed-blocks">
+  <a class="card tooltipped" title="Blocks can be cryptographically signed, allowing the creator of the block to verify their identity in the future." href="/elements/signed-blocks">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -114,7 +114,7 @@ These are the features under currently under investigation as part of the Alpha 
 These are some of the features currently under development, but are yet ready for testing in dev sidechain.
 
 <div class="ui four doubling cards">
-  <a class="card" href="/elements/asset-issuance">
+  <a class="card tooltipped" title="Blockchains keep track of the movement of tokens, and this Element allows you to create your own tokens on a sidechain." href="/elements/asset-issuance">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
@@ -125,7 +125,7 @@ These are some of the features currently under development, but are yet ready fo
       </div>
     </div>
   </a>
-  <a class="card" href="/elements/bitmask-sighash-modes">
+  <a class="card tooltipped" title="Allow arbitrary, miner-rewritable bitmasks of transaction inputs and outputs." href="/elements/bitmask-sighash-modes">
     <div class="image">
       <img src="/img/square-image.png" />
     </div>
