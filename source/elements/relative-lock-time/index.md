@@ -1,4 +1,10 @@
-#### Relative Lock Time
+---
+title: Relative Lock Time
+description: Allows a transaction to be time-locked, preventing its use in a new transaction until a relative time change is achieved.
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/relative-lock-time/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/relative-lock-time/index.md
+---
+
 *Principal Investigator: Mark Friedenbach*
 
 The consensus-enforced semantics of the sequence number field is modified to enable a signed transaction input to remain invalid for a defined period of time after confirmation of its corresponding output, for the purpose of supporting consensus-enforced transaction replacement features.

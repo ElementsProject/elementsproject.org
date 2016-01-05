@@ -1,4 +1,10 @@
-#### New opcodes
+---
+title: New Opcodes
+description: Introduces DETERMINISTICRANDOM and CHECKSIGFROMSTACK, in addition to re-enabling several scripts previously enabled in Bitcoin.
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/opcodes/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/opcodes/index.md
+---
+
 *Principal Investigator: Patrick Strateman*
 
 Alpha enables several new script opcodes, in addition to the ones already supported by Bitcoin.
