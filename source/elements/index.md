@@ -17,7 +17,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
 Elements is an open source collaborative project where we work on a collection of experiments to more rapidly bring technical innovation to Bitcoin.  Elements are features that are proposed and developed in this technical community that in arbitrary combinations can be fashioned into sidechains.
 
 <center>
-[![Greg Maxwell's Sidechain Elements Intro Video](http://i.imgur.com/AsSENaW.png)](https://www.youtube.com/watch?v=9pyVvq-vrrM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9pyVvq-vrrM" frameborder="0" allowfullscreen></iframe>
 </center>
 
 ## Current Elements
