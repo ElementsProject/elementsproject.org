@@ -1,6 +1,7 @@
 ---
 title: Relative Lock Time
 description: Allows a transaction to be time-locked, preventing its use in a new transaction until a relative time change is achieved.
+image: /img/time-lock.svg
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/relative-lock-time/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/relative-lock-time/index.md
 ---

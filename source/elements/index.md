@@ -1,5 +1,5 @@
 ---
-title: Elements
+title: "The Periodic Table of Elements"
 source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/index.md
 ---
@@ -16,12 +16,8 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
 
 Elements is an open source collaborative project where we work on a collection of experiments to more rapidly bring technical innovation to Bitcoin.  Elements are features that are proposed and developed in this technical community that in arbitrary combinations can be fashioned into sidechains.
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9pyVvq-vrrM" frameborder="0" allowfullscreen></iframe>
-</center>
-
 ## Current Elements
-These are the features under currently under investigation as part of the Alpha dev sidechain.
+These are the features under currently under investigation as part of [the Alpha developer sidechain](/sidechains/alpha).
 
 <div class="ui four doubling cards">
   <a class="card tooltipped" title="Confidential Transactions are a new type of transaction that allow the amount of tokens being transferred to be concealed, but mathematically proven." href="/elements/confidential-transactions">
@@ -115,7 +111,7 @@ These are the features under currently under investigation as part of the Alpha 
 </div>
 
 ## Proposed Elements
-These are some of the features currently under development, but are yet ready for testing in dev sidechain.
+These are some of the features currently under development, but are not yet ready for deployment on a public sidechain.
 
 <div class="ui four doubling cards">
   <a class="card tooltipped" title="Blockchains keep track of the movement of tokens, and this Element allows you to create your own tokens on a sidechain." href="/elements/asset-issuance">
@@ -137,6 +133,17 @@ These are some of the features currently under development, but are yet ready fo
       <div class="ui small statistic">
         <div class="value">Bsm</div>
         <div class="label">Bitmask Sighash Modes</div>
+      </div>
+    </div>
+  </a>
+  <a class="card tooltipped" title="Have an Element you'd like to contribute?  Let's add it now!" href="/elements/new">
+    <div class="image">
+      <img src="/img/square-image.png" />
+    </div>
+    <div class="content">
+      <div class="ui small statistic">
+        <div class="value">???</div>
+        <div class="label">Add a new Element <i class="icon right chevron"></i></div>
       </div>
     </div>
   </a>
