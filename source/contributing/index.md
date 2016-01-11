@@ -7,10 +7,14 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
 
 <div class="ui vertical stripe segment" style="padding: 0; border: 0;">
   <h3 class="ui header">Join the Community.</h3>
-  <p>Our public Slack is the fastest way to get connected with other contributors to the Elements Project.  We'll send an invitation to your email address.</p>
+  <p>Our public Slack is the fastest way to get connected with the Elements Project community.  We'll send an invitation to your email address.</p>
   <a href="https://chat.elementsproject.org/" class="ui button primary huge" style="float:right;">Get an Invite<i class="icon right chevron"></i></a>
   <div style="clear: both;"></div>
 </div>
+
+Most technical conversation takes place in [#sidechains-dev on Freenode](http://webchat.freenode.net/?channels=%23sidechains-dev).  For other discussions, including ideas and even meetups, the Slack community has several rooms dedicated to these items.  There is also the <code>#irc</code> room, which bridges input directly from the channel on Freenode.
+
+Other resources are listed below.
 
 #### Source Code
 * https://github.com/ElementsProject/elements - contains isolated feature and dev sidechains braches
