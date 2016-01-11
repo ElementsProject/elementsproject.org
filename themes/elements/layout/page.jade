@@ -12,7 +12,10 @@ block content
       include partials/edit-self
 
     h2 #{page.title}
+    if (page.image)
+      img.ui.image.right.floated.small(src="#{page.image}")
     if (page.description)
       h3 #{page.description}
+    
 
     .content !{page.content}

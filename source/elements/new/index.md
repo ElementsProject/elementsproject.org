@@ -1,9 +1,8 @@
 ---
-title: Signed Blocks
-description: Blocks can be cryptographically signed, allowing the creator of the block to verify their identity in the future.
-image: /img/signed-blocks.svg
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/signed-blocks/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/signed-blocks/index.md
+title: Add a New Element
+description: 
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/new/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/new/index.md
 ---
 
 *Principal Investigator: Jorge Timón*

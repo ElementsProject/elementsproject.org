@@ -7,7 +7,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
 
 ### Gem
 <div class="ui icon message">
-  <i class="icon quote"></i>
+  <i class="icon quote left"></i>
   <div class="content">
     <div class="ui comments">
       <div class="comment">
@@ -26,7 +26,10 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
   </div>
 </div>
 
-<a href="/case-studies/gem.html" class="ui button huge primary">Learn about Gem's Use Case<i class="ui icon chevron right"></i></a>
+<a href="/case-studies/gem.html" class="ui huge right floated primary button">Learn about Gem's Use Case<i class="ui icon chevron right"></i></a>
+
+<div style="clear: both;"></div>
+
 
 ### Liquid, by Blockstream
 Blockstream has used several Elements, including [Confidential Transactions](/elements/confidential-transactions) and [Segregated Witness](/elements/segregated-witness), to construct the first commercial sidechain.  The Liquid sidechain offers rapid transfer and settlement between Bitcoin exchanges, bypassing the 10 minute confirmation limit imposed by the Bitcoin blockchain.

@@ -1,6 +1,7 @@
 ---
 title: Signature Covers Value
 description: This allows the signature on a transaction to be invalidated if the inputs have been spent, making it faster and easier to validate a transaction, simply by checking its signature.
+image: /img/signature-covers-value.svg
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/signature-covers-value/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/signature-covers-value/index.md
 ---

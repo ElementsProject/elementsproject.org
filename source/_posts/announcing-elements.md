@@ -12,13 +12,18 @@ New Elements Project][elements]. The Elements Project is a community effort to
 create and test new extensions to the Bitcoin protocol.  Core Developers have
 already announced several of these new Elements, including [Confidential
 Transactions][confidential-transactions] by Gregory Maxwell and [Segregated
-Witness][segregated-witness] by Pieter Wuille.
+Witness][segregated-witness] by Pieter Wuille, which have undergone extensive
+testing on existing sidechains.
 <!-- more -->
 
 Along with this new release also comes a new community initiative, **[the
 Sidechain Developer Community][contributing].**  We're hoping this community
 will facilitate discussion around how various Elements are being used, including
 known efforts by companies like Gem and RootStock.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9pyVvq-vrrM" frameborder="0" allowfullscreen></iframe>
+</center>
 
 ### What are Elements?
 Elements are bundles of code that extend Bitcoin functionality, and today's
