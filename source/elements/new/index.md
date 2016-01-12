@@ -1,12 +1,14 @@
 ---
 title: Add a New Element
-description: 
+description: Submit your contribution for inclusion in the Periodic Table!
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/new/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/new/index.md
 ---
 
-*Principal Investigator: Jorge Timón*
+People wishing to submit BIPs, first should propose their idea or document to the mailing list. After discussion they should email Luke Dashjr <luke_bipeditor@dashjr.org>. After copy-editing and acceptance, it will be published here.
 
-SHA256d proof of work is replaced with the system’s scripting system, just signing blocks instead of transactions. In other words, the Dynamic Membership Multi-party Signature (DMMS) is replaced with a (Static Membership) Multi-party Signature. This has also been described in the past as “private chains” [http://freico.in/docs/freimarkets.pdf ].
+We are fairly liberal with approving BIPs, and try not to be too involved in decision making on behalf of the community. The exception is in very rare cases of dispute resolution when a decision is contentious and cannot be agreed upon. In those cases, the conservative option will always be preferred.
 
-The Elements Alpha release uses a threshold of functionaries as a protocol adaptor and also to sign blocks of transactions.  In a future release we plan to replace the block-signing with merge-mining, though the functionaries remain to communicate the transfer transactions to the main chain.   The Signed Blocks feature serves to provide transaction processing functionality until merge-mining is implemented.  Our intent is to later phase in the fully decentralised 2-way peg mechanism to replace the functionaries.
+Having a BIP here does not make it a formally accepted standard until its status becomes Active. For a BIP to become Active requires the mutual consent of the community.
+
+Those proposing changes should consider that ultimately consent may rest with the consensus of the Bitcoin users (see also: economic majority).
