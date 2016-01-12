@@ -16,6 +16,10 @@ block content
       img.ui.image.right.floated.small(src="#{page.image}")
     if (page.description)
       h3 #{page.description}
+    if (page.branch)
+      a.ui.button.large.primary(href="https://github.com/ElementsProject/elements/tree/#{page.branch}")
+        i.icon.code
+        code #{page.branch}
     
 
     .content !{page.content}
