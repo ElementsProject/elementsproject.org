@@ -32,7 +32,8 @@ transaction, users can share access to the details of an individual transaction.
 ---
 
 ### Investigation
-Principal Investigator: [Gregory Maxwell](/contributors/gmaxwell)
+*Principal Investigator: [Gregory Maxwell](/contributors/gmaxwell)*
+
 The security of the Bitcoin ledger is made possible by universal verification:
 each participant individually and autonomously verifies that each transaction is
 valid, without trusting any third party. An unfortunate side effect is that all
