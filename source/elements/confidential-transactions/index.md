@@ -103,7 +103,9 @@ A commitment scheme lets you keep a piece of data secret but commit to
 it so that you cannot change it later. A simple commitment scheme can
 be constructed using a cryptographic hash:
 
-  commitment = SHA256( blinding_factor || data )
+```
+commitment = SHA256( blinding_factor || data )
+```
 
 If you tell someone only the commitment then they cannot determine
 what data you are committing to (given certain assumptions about the
@@ -118,15 +120,19 @@ property: commitments can be added, and the sum of a set of commitments
 is the same as a commitment to the sum of the data (with a blinding key
 set as the sum of the blinding keys):
 
-  C(BF1, data1) + C(BF2, data2) == C(BF1 + BF2, data1 + data2) C(BF1,
-  data1) - C(BF1, data1) == 0
+```
+C(BF1, data1) + C(BF2, data2) == C(BF1 + BF2, data1 + data2) C(BF1, data1) -
+C(BF1, data1) == 0
+```
 
 In other words, the commitment preserves addition and the commutative
 property applies.
 
 If data_n = {1,1,2} and BF_n = {5,10,15} then:
 
-  C(BF1, data1) + C(BF2, data2) - C(BF3, data3) == 0
+```
+C(BF1, data1) + C(BF2, data2) - C(BF3, data3) == 0
+```
 
 and so on.
 
@@ -136,13 +142,18 @@ beyond accepting the black box behaviors I describe here.]
 
 Normally an ECC pubkey is created by multiplying a generator for the group
 (G) with the secret key (x):
-  Pub = xG
+
+```
+Pub = xG
+```
 
 The result is usually serialized as a 33-byte array.
 
 ECC public keys obey the additively homomorphic property mentioned before:
 
-   Pub1 + Pub2 = (x1 + x2 (mod n))G.
+```
+Pub1 + Pub2 = (x1 + x2 (mod n))G.
+```
 
 (This fact is used by the BIP32 HD wallet scheme to allow third parties
 to generate fresh Bitcoin addresses for people.)
@@ -153,11 +164,15 @@ log for H with respect to G (or vice versa), meaning no one knows an
 x such that xG = H. We can accomplish this by using the cryptographic
 hash of G to pick H:
 
-    H = to_point(SHA256(ENCODE(G)))
+```
+H = to_point(SHA256(ENCODE(G)))
+```
 
 Given our two generators we can build a commitment scheme like this:
 
-   commitment = xG + aH
+```
+commitment = xG + aH
+```
 
 Here x is our secret blinding factor, and a is the amount that we're
 committing to.  You can verify just using the commutative property of
@@ -180,8 +195,10 @@ If the author of a transaction takes care in picking their blinding
 factors so that they add up correctly, then the network can still verify
 the transaction by checking that its commitments add up to zero:
 
-    (In1 + In2 + In3 + plaintext_input_amount*H...) -
-     (Out1 + Out2 + Out3 + ... fees*H) == 0.
+```
+(In1 + In2 + In3 + plaintext_input_amount*H...) -
+ (Out1 + Out2 + Out3 + ... fees*H) == 0.
+```
 
 This requires making the fees in a transaction explicit, but that's
 generally desirable.
@@ -195,7 +212,9 @@ of large values can 'overflow' and behave like negative amounts. This
 means that a sums-to-zero behavior still holds when some outputs are
 negative, effectively allowing the creation of 5 coins from nothing:
 
- (1 + 1) - (-5 + 7) == 0
+```
+(1 + 1) - (-5 + 7) == 0
+```
 
 This would be interpreted as "someone spends two bitcoins, gets a '-5'
 bitcoin out that they discard out, and a 7 bitcoin output".
@@ -231,7 +250,9 @@ private key used for the signature is just the blinding factor.
 Going further, let's say I want to prove C is a commitment to 1 without
 telling you the blinding factor. All you do is compute
 
-   C' = C - 1H
+```
+C' = C - 1H
+```
 
 and ask me to provide a signature (with respect to G) with pubkey C'. If
 I can do that, the C must be a commitment to 1 (or else I've broken the
@@ -247,7 +268,10 @@ C is either 0 or 1--we call this an "OR proof".
 
 First, I give you C, and you compute C':
 
-    C' = C - 1H
+```
+C' = C - 1H
+```
+
 
 Then I provide a ring signature over {C, C'}.
 
@@ -264,7 +288,9 @@ Say I want to prove to you that C is in the range [0, 32). Now that we
 have an OR proof, imagine I send you a collection of commitments and OR
 proofs for each of them:
 
+```
 C1 is 0 or 1 C2 is 0 or 2 C3 is 0 or 4 C4 is 0 or 8 C5 is 0 or 16.
+```
 
 If I pick the blinding factors for C1..5 correctly then I can arrange
 it so that C1 + C2 + C3 + C4 + C5 == C.  Effectively I have built up
