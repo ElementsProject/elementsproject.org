@@ -7,7 +7,7 @@ Elements is an open source collaborative project where we work on a collection o
 “It's nice working on something without millions of BTCs resting on it, and still have a path to production use.”
 
 ## Current Elements
-These are the features under currently under investigation as part of the Alpha dev sidechain.
+These are the features currently under investigation as part of the Alpha dev sidechain.
 
 ####Confidential Transactions 
 *Principal Investigator: Greg Maxwell* [[_Peer reviewed technical details_](https://github.com/ElementsProject/elementsproject.github.io/blob/master/confidential_values.md)]
