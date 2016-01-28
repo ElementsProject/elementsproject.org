@@ -2,7 +2,7 @@
 title: Basic Asset Issuance
 description: Create new assets on a sidechain by using Bitcoin as a bond.
 image: /img/asset-issuance.svg
-branch: https://github.com/ElementsProject/elements/tree/multi-asset-0.11
+branch: multi-asset-0.11
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/asset-issuance/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/asset-issuance/index.md
 ---
@@ -10,7 +10,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
 *Principal Investigator: Jorge Timón*
  * [feature branch multi-asset-0.10](https://github.com/ElementsProject/elements/tree/multi-asset-0.10) - branch of ongoing assets dev
 
-Users can issue their own assets which represent fungible ownership of the underlying asset type representing by the newly created units, which could theoretically represent any asset including vouchers, coupons, currencies, deposits, bonds, shares, etc (subject to the respective jurisdiction’s regulatory requirements. 
+Users can issue their own assets which represent fungible ownership of the underlying asset type representing by the newly created units, which could theoretically represent any asset including vouchers, coupons, currencies, deposits, bonds, shares, etc (subject to the respective jurisdiction’s regulatory requirements.
 
 This opens the door for building trustless exchanges, options, and other advanced smart contracts involving those arbitrary assets and the “hostcoin” (a native asset whose ID is equal to the hash of the genesis block or chain ID; in Alpha’s case, it is the federated-peg coin which is backed by testnet coins, see “Deterministic peg” section).
 
