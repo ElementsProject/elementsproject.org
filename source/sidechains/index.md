@@ -1,6 +1,10 @@
 ---
 title: Sidechains
+description: Combine multiple Elements into your own sidechain.
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/index.md
 ---
+
 
 ### Sidechains are convenient ways to test Elements.
 
