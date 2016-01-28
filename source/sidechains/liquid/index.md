@@ -1,11 +1,11 @@
 ---
 title: Liquid
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/sidechainds/liquid/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/sidechainds/liquid/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/liquid/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/liquid/index.md
 data:
   elements: ct
 ---
-Liquid is a commercial sidechain that combines [Confidential Transactions]() and
+Liquid is a commercial sidechain that combines [Confidential Transactions](/elements/confidential-transactions) and
 several other Elements to provide high-speed transactions between Bitcoin
 Exchanges.
 
@@ -33,6 +33,7 @@ balances and accounts across the market to avoid ISL, increasing overall capital
 requirements and exposure to the possibility of counterparty risk.
 
 Liquid is a powerful sidechain with wide-reaching implications.  To learn more,
-[read the Liquid whitepaper](https://blockstream.io).
+[read the Liquid announcement](https://www.blockstream.com/2015/10/12/introducing-liquid/).
 
-<a href="https://blockstream.io" class="ui button primary huge">Read the Liquid Whitepaper<i class="ui icon chevron right"></i></a>
+<a href="mailto:liquid@blockstream.com" class="ui button primary huge">Contact Blockstream To Learn More<i class="ui icon chevron right"></i></a>
+<!-- <a href="https://blockstream.io" class="ui button primary huge">Read the Liquid Whitepaper<i class="ui icon chevron right"></i></a> -->
