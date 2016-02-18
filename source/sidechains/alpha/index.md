@@ -1,7 +1,7 @@
 ---
 title: The Alpha Sidechain
-edit: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/sidechains/alpha/index.md
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/sidechains/alpha/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/alpha/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/alpha/index.md
 ---
 
 To make it easy for the community to test the latest Elements, this project
@@ -41,7 +41,7 @@ git checkout alpha
 ./autogen.sh
 ./configure
 make
-# If your build was successful, you will find src/alphad, src/alpha-cli and src/qt/alpha-qt 
+# If your build was successful, you will find src/alphad, src/alpha-cli and src/qt/alpha-qt
 </pre>
 
 The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin [Data Directory](https://en.bitcoin.it/wiki/Data_directory).  For example, in Linux `~/.bitcoin/alphatestnet3` contains the Alpha blocks, indicies and wallet.

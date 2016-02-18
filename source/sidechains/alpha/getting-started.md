@@ -1,7 +1,7 @@
 ---
 title: Getting Started with the Alpha Sidechain
-edit: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/sidechains/alpha/getting-started.md
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/sidechains/alpha/getting-started.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/alpha/getting-started.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/alpha/getting-started.md
 ---
 
 You might have heard of Sidechains by now – a way to test new blockchain ideas,
