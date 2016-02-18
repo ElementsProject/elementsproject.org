@@ -8,7 +8,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/sou
   img {
     max-width: 100%;
   }
-  
+
   .ui.statistic > .value {
     text-transform: none;
   }
@@ -30,6 +30,11 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="label">Confidential Transactions</div>
       </div>
     </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+      </small>
+    </div>
   </a>
   <a class="card tooltipped" title="Segregated Witness creates a separate data structure for the signature on a single transaction, fixing transaction malleability and decreasing the amount space required for storage." href="/elements/segregated-witness">
     <div class="image">
@@ -40,6 +45,13 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="value">Sw</div>
         <div class="label">Segregated Witness</div>
       </div>
+    </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon setting tooltipped" title="This feature is being integrated into the Bitcoin blockchain."></i>
+        <!-- <i class="icon bitcoin tooltipped" title="This feature is deployed on the Bitcoin blockchain."></i> -->
+      </small>
     </div>
   </a>
   <a class="card tooltipped" title="Relative Lock Time allows a transaction to be time-locked, preventing its use in a new transaction until a relative time (generally, block height) is reached." href="/elements/relative-lock-time">
@@ -52,6 +64,11 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="label">Relative Time Lock</div>
       </div>
     </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+      </small>
+    </div>
   </a>
   <a class="card tooltipped" title="Schnorr Signatures are a new way of constructing signatures for transactions, both improving performance of validating a transaction and offering new modes of multi-signature." href="/elements/schnorr-signatures">
     <div class="image">
@@ -62,6 +79,11 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="value">Ss</div>
         <div class="label">Schnorr Signatures</div>
       </div>
+    </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+      </small>
     </div>
   </a>
   <a class="card tooltipped" title="Many new opcodes are being tested, and are being hailed as 'Script 2.0'." href="/elements/opcodes">
@@ -74,6 +96,12 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="label">New Opcodes</div>
       </div>
     </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon setting tooltipped" title="This feature is being integrated into the Bitcoin blockchain."></i>
+      </small>
+    </div>
   </a>
   <a class="card tooltipped" title="This allows the signature on a transaction to be invalidated if the inputs have been spent, making it faster and easier to validate a transaction, simply by checking its signature." href="/elements/signature-covers-value">
     <div class="image">
@@ -84,6 +112,11 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="value">Scv</div>
         <div class="label">Signature Covers Value</div>
       </div>
+    </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+      </small>
     </div>
   </a>
   <a class="card tooltipped" title="Deterministic Pegs allow cross-chain transactions to be constructed in a decentralized fashion.  Tokens can be moved from one blockchain to another." href="/elements/deterministic-pegs">
@@ -96,6 +129,11 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="label">Deterministic Pegs</div>
       </div>
     </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+      </small>
+    </div>
   </a>
   <a class="card tooltipped" title="Blocks can be cryptographically signed, allowing the creator of the block to verify their identity in the future." href="/elements/signed-blocks">
     <div class="image">
@@ -106,6 +144,11 @@ These are the features under currently under investigation as part of [the Alpha
         <div class="value">Sb</div>
         <div class="label">Signed Blocks</div>
       </div>
+    </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+      </small>
     </div>
   </a>
 </div>
