@@ -1,9 +1,16 @@
-# Getting Started With Sidechains
+---
+title: Getting Started with the Alpha Sidechain
+edit: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/alpha/getting-started.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/alpha/getting-started.md
+---
+
 You might have heard of Sidechains by now – a way to test new blockchain ideas,
 while still being protected the security of the Bitcoin mining network.
 Blockstream has been hard at work [turning this idea into a reality][presentation],
 and recently they released [the Elements Project][elements], which puts a huge
-list of powerful new tools into the hands of developers.
+list of powerful new tools into the hands of developers.  One of those tools is
+[alpha, a sidechain pegged to Bitcoin's testnet][alpha], which implements a
+majority of the Elements to date.
 
 So what's the first thing we're going to do?  Start playing with it, of course.
 
