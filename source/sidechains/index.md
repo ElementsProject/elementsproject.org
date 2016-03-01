@@ -11,6 +11,9 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch
 The Elements Project, supported by Blockstream, runs and maintains a number of
 sidechains.
 
+#### Creating Your Own Sidechain?
+Want to pick your own set of Elements?  <a href="/sidechains/creating-your-own.html">Build your own sidechain</a>.
+
 ## Experimental Sidechains
 <h3>[alpha](/sidechains/alpha)</h3>
 <!-- ### [beta](/sidechains/beta) -->
