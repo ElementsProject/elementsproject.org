@@ -32,7 +32,7 @@ and ultimately to phase in the full 2-way pegging  mechanism.
 Just trying to run an Alpha node to build your prototype?  Jump straight to the
 instructions.
 
-<a href="/sidechains/alpha/compiling.html" class="ui button fluid floated primary">Compiling Alpha from Source<i class="icon chevron right"></i></a>
+<a href="/sidechains/alpha/building.html" class="ui button fluid floated primary">Compiling Alpha from Source<i class="icon chevron right"></i></a>
 
 <div style="clear: both;"></div>
 
