@@ -120,7 +120,7 @@ If alphad is started with the `tracksidechain=all` command line argument it stor
 
 Lastly, let's have a look at the curious secondScriptPubKey, which is expected to be the 9th argument to OP_WPV and is committed to in a withdraw lock (1st argument).
 The secondScriptPubKey is executed with a stack that contains the result of the scriptSig execution and information about the withdrawal transaction, i.e. transaction fee, fraud bounty, the OP_CSV locktime (from the withdrawoutput’s scriptPubKey ELSE case) and a constant dummy byte string.
-In Elements Alpha, the secondScriptPubKey for the Bitcoin lock is `OP_DROP 144 OP_GREATERTHANOREQUAL`, which effectively ensures that contest period has passed.
+In Elements Alpha, the secondScriptPubKey for the Bitcoin lock is `OP_DROP 144 OP_LESSTHANOREQUAL`, which effectively ensures that contest period has passed.
 The secondScriptPubKey does not inspect the result the of the secondScriptSig, so the default scriptSig in this case is just a one byte push.
 This mechanism could in principle enforce additional chain specific limits on transaction fee and fraud bounty or more complex rules.
 
