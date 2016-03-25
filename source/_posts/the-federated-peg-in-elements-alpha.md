@@ -42,8 +42,8 @@ The first two arguments are already provided by the scriptPubKey. They add chain
 The next arguments provide a 'locking transaction'.
 This is the main chain transaction that locks coins in order to withdraw them on the sidechain.
 Figure 1 shows the relationship between the transaction types we've seen so far.
-<a href="/img/The-Federated-Peg-in-Elements-Alpha/peg.png">
-    <img style="width:100%;" src="/img/The-Federated-Peg-in-Elements-Alpha/peg.png" alt="peg figure"/>
+<a href="/img/the-federated-peg-in-elements-alpha/peg.png">
+    <img style="width:100%;" src="/img/the-federated-peg-in-elements-alpha/peg.png" alt="peg figure"/>
 </a>
 The withdrawal transaction spends OP_WPV locked coins by referring to a lock on the other chain.
 Instead of using OP_WPV, the main chain lock is a multisig output controlled by the federation.
@@ -101,8 +101,8 @@ Therefore, during the contest period the withdraw output allows any node to prov
 OP_RPV is intended to correct invalid states of two types: double spends of a parent chain lock and parent chain reorganisations.
 You might have realized already that the former situation is indeed not covered by OP_WPV alone. In fact, it is possible that withdrawal transactions which refer to the same parent chain lock make it into the chain.
 Figure 2 shows the resolution of such a double spend attempt.
-<a href="/img/The-Federated-Peg-in-Elements-Alpha/peg_fraud.png">
-    <img style="width:100%;" src="/img/The-Federated-Peg-in-Elements-Alpha/peg_fraud.png" alt="peg figure"/>
+<a href="/img/the-federated-peg-in-elements-alpha/peg-fraud.png">
+    <img style="width:100%;" src="/img/the-federated-peg-in-elements-alpha/peg-fraud.png" alt="peg figure"/>
 </a>
 OP_RPV allows to spend the withdraw output when a fraud proof is provided. It consists of the original withdraw transaction, the double spending withdraw transaction and a merkle block for each. The reference to the main chain lock is already given by the withdraw output.
 In consequence, the interpreter then checks that there is indeed a double spend, both merkle blocks are valid and contain the transactions, and that the double spending withdraw transaction is newer than the original withdraw transaction.
@@ -128,8 +128,8 @@ This mechanism could in principle enforce additional chain specific limits on tr
 ### Withdrawing from the sidechain
 The mechanism behind sending coins from the sidechain to the main chain is - as far as the Alpha code is concerned - relatively simple.
 Figure 3 shows the sequence of transactions during a withdrawal to the main chain.
-<a href="/img/The-Federated-Peg-in-Elements-Alpha/peg_out.png">
-    <img style="width:100%;" src="/img/The-Federated-Peg-in-Elements-Alpha/peg_out.png" alt="peg figure"/>
+<a href="/img/the-federated-peg-in-elements-alpha/peg-out.png">
+    <img style="width:100%;" src="/img/the-federated-peg-in-elements-alpha/peg-out.png" alt="peg figure"/>
 </a>
 The federated lock on the main chain is a m of n multisignature output.
 Functionaries who hold the lock run a program we call *watchman* which communicates to alphad via RPC and is responsible for releasing the lock when a withdraw request appears on the sidechain.
