@@ -1,8 +1,8 @@
 ---
 title: Announcing the New Elements Project
 subtitle: Open source code and developer sidechains for advancing Bitcoin.
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/_posts/announcing-elements.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/_posts/announcing-elements.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/_posts/announcing-elements.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/_posts/announcing-elements.md
 author: martindale
 ---
 

@@ -2,8 +2,8 @@
 title: Deterministic Pegs
 description: Deterministic Pegs allow cross-chain transactions to be constructed in a decentralized fashion.  Tokens can be moved from one blockchain to another.
 image: /img/deterministic-pegs.svg
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/deterministic-pegs/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/deterministic-pegs/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/deterministic-pegs/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/deterministic-pegs/index.md
 ---
 
 *Principal Investigator: Matt Corallo*

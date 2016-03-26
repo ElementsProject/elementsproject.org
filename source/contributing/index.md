@@ -1,8 +1,8 @@
 ---
 title: Get Involved.
 subtitle: Contributing to the Elements Project
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/contributing/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/contributing/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/contributing/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/contributing/index.md
 ---
 
 <div class="ui vertical stripe segment" style="padding: 0; border: 0; margin-bottom: 3em;">
