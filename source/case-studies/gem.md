@@ -1,8 +1,8 @@
 ---
 title: Gem's Use of Elements & Sidechains
 description: Learn about how Gem is using Elements in their sidechain implementation.
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/case-studies/gem.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/case-studies/gem.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/case-studies/gem.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/case-studies/gem.md
 ---
 
 

@@ -2,8 +2,8 @@
 title: Bitmask Sighash Modes
 description: Allow arbitrary, miner-rewritable bitmasks of transaction inputs and outputs.
 image: /img/bitmask-sighash-modes.svg
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/bitmask-sighash-modes/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/bitmask-sighash-modes/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/bitmask-sighash-modes/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/bitmask-sighash-modes/index.md
 ---
 
 *Principal Investigator: Glenn Willen*
