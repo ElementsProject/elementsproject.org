@@ -1,7 +1,7 @@
 ---
 title: The Alpha Sidechain
-edit: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/sidechains/alpha/index.md
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/sidechains/alpha/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/sidechains/alpha/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/alpha/index.md
 ---
 
 To make it easy for the community to test the latest Elements, this project

@@ -1,7 +1,7 @@
 ---
 title: Liquid
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/liquid/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/liquid/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/sidechains/liquid/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/liquid/index.md
 data:
   elements: ct
 ---

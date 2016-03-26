@@ -2,8 +2,8 @@
 title: Confidential Transactions
 description: Preserve security while simultaneously obscuring transaction values.
 image: /img/confidential-transactions.svg
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/confidential-transactions/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/confidential-transactions/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/confidential-transactions/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/confidential-transactions/index.md
 ---
 
 One of the most powerful new features being explored in Elements is Confidential

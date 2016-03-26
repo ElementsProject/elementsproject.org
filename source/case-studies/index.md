@@ -1,8 +1,8 @@
 ---
 title: Who is using Elements?
 description: Case studies of Elements Project users and deployments.
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/case-studies/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/case-studies/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/case-studies/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/case-studies/index.md
 ---
 
 ### Gem

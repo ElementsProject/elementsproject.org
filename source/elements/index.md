@@ -1,7 +1,7 @@
 ---
 title: "The Periodic Table of Elements"
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/index.md
 ---
 
 <style type="text/css">
