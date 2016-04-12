@@ -2,8 +2,8 @@
 title: Schnorr Signature Validation
 description: A new way of constructing signatures for transactions, both improving efficiency of validating a transaction and offering new modes of multi-signature.
 image: /img/confidential-transactions.svg
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/schnorr-signatures/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/schnorr-signatures/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/schnorr-signatures/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/schnorr-signatures/index.md
 ---
 
 *Principal Investigator: Patrick Strateman*

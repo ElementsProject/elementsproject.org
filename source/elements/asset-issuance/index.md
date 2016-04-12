@@ -3,8 +3,8 @@ title: Basic Asset Issuance
 description: Create new assets on a sidechain by using Bitcoin as a bond.
 image: /img/asset-issuance.svg
 branch: multi-asset-0.11
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/asset-issuance/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/asset-issuance/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/asset-issuance/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/asset-issuance/index.md
 ---
 
 *Principal Investigator: Jorge Timón*

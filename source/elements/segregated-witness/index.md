@@ -2,8 +2,8 @@
 title: Segregated Witness
 description: Reduce the required space for transactions in a block by a factor of 4.
 image: /img/segregated-witness.svg
-source: https://github.com/ElementsProject/elementsproject.github.io/blob/hexo/source/elements/segregated-witness/index.md
-edit: https://github.com/ElementsProject/elementsproject.github.io/edit/hexo/source/elements/segregated-witness/index.md
+source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/segregated-witness/index.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/segregated-witness/index.md
 ---
 
 *Principal Investigator: Pieter Wuille*
