@@ -15,7 +15,7 @@ Let's start with Alpha's genesis block.
 It looks very much unlike Bitcoin's genesis block because it creates exactly one output with a value of 21 million.
 The output has the following scriptPubKey:
 
-{% codeblock line_number:false %}
+{% codeblock %}
 6fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d6190000000000
 9eac001049d5c38ece8996485418421f4a01e2d7
 OP_WITHDRAWPROOFVERIFY
@@ -70,7 +70,7 @@ the lock output.
 This change can then be unlocked later with another withdrawal transaction similar to the transaction we are creating here.
 
 A withdraw output has the following scriptPubKey:
-{% codeblock line_number:false %}
+{% codeblock %}
 OP_IF
     <nLockHeight>
     <lockTxHash>
@@ -136,7 +136,7 @@ Functionaries who hold the lock run a program we call *watchman* which communica
 Note that due to the P2C payments, the federation is is not aware of a lock as long as the corresponding withdraw transaction has not taken place. This is because only the withdraw transaction reveals the data necessary - the contract - to derive pub- and privkey of the lock.
 
 Withdraw requests take the form of a lock output, so a transfer from side- to main chain would be initiated by a new transaction with the following scriptPubKey:
-{% codeblock line_number:false %}
+{% codeblock %}
 <HASH160(scriptDestination)>
 OP_DROP
 <genesisBlockHash>
