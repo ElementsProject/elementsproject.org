@@ -12,6 +12,9 @@ Sidechains are independently deployed bundles of Elements in the real world.  Si
   <i class="icon right chevron"></i>
 </a>
 
+#### Creating Your Own Sidechain?
+Want to pick your own set of Elements?  <a href="/sidechains/creating-your-own.html">Build your own sidechain</a>.
+
 ## Experimental Sidechains
 <div class="ui two stackable cards">
   <div class="card">
