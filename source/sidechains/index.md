@@ -34,7 +34,7 @@ These sidechains are in development and testing, or are explicitly intended for 
 <div class="ui two stackable cards">
   <div class="card" style="background: url('/img/platonic-volumes.png') 100%;">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/rootstock-white.webp" style="margin: 3em 0; width: 100%;" />
+      <img src="/img/alpha.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Alpha](/sidechains/alpha)</h3>
