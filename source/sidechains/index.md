@@ -34,7 +34,7 @@ These sidechains are in development and testing, or are explicitly intended for 
 <div class="ui two stackable cards">
   <div class="card" style="background: url('/img/platonic-volumes.png') 100%;">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/rootstock-white.webp" style="margin: 1em; width: 100%;" />
+      <img src="/img/rootstock-white.webp" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Alpha](/sidechains/alpha)</h3>
@@ -46,7 +46,7 @@ These sidechains are in development and testing, or are explicitly intended for 
   </div>
   <div class="card" style="background: url('http://img.youtube.com/vi/h3Qd_k3FBKQ/maxresdefault.jpg');">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/rootstock-white.webp" style="margin: 1em; width: 100%;" />
+      <img src="/img/rootstock-white.webp" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Rootstock](/sidechains/rootstock)</h3>
@@ -58,7 +58,7 @@ These sidechains are in development and testing, or are explicitly intended for 
   </div>
   <div class="card" style="background: linear-gradient(to right, #008bbe 0%, #13e1d0 100%);">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/gem.png" style="margin: 1em; width: 100%;" />
+      <img src="/img/gem.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Gem](/sidechains/gem)</h3>
@@ -70,7 +70,7 @@ These sidechains are in development and testing, or are explicitly intended for 
   </div>
   <div class="card" style="background: url('/img/platonic-solids.png');">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/create-your-own.png" style="margin: 1em; width: 100%;" />
+      <img src="/img/square-image.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Create Your Own](/sidechains/creating-your-own.html)</h3>
@@ -88,7 +88,7 @@ These sidechains are being used on the main Bitcoin network.
 <div class="ui two cards">
   <div class="card">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/liquid.png" style="margin: 1em; width: 100%;" />
+      <img src="/img/liquid.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content">
       <h3 class="header">[Liquid](/sidechains/liquid)</h3>
