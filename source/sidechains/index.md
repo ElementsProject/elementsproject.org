@@ -5,23 +5,38 @@ source: https://github.com/ElementsProject/elementsproject.github.io/blob/master
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/index.md
 ---
 
-Sidechains are independently deployed bundles of Elements in the real world.  Sidechains can be used to test new features for Bitcoin, change network and security properties, and even stand alone as production networks.
+<div class="ui text container">
+  <p>Sidechains are independently deployed bundles of Elements in the real world.  Sidechains can be used to test new features for Bitcoin, change network and security properties, and even stand alone as production networks.</p>
 
-<a href="https://blockstream.com/sidechains.pdf" class="ui huge right labeled icon fluid primary button">
-  Read the Sidechains Whitepaper
-  <i class="icon right chevron"></i>
-</a>
+  <h4>Creating Your Own Sidechain?</h4>
+  <p>Want to pick your own set of Elements, and deploy your own blockchain?</p>
 
-#### Creating Your Own Sidechain?
-Want to pick your own set of Elements?  <a href="/sidechains/creating-your-own.html">Build your own sidechain</a>.
+  <div class="ui fluid large buttons">
+    <a href="https://blockstream.com/sidechains.pdf" class="ui button">
+      <i class="icon file pdf outline"></i>
+      Read the Sidechains Whitepaper
+    </a>
+    <div class="or"></div>
+    <a href="/sidechains/creating-your-own.html" class="ui positive button">
+      <i class="icon leaf"></i>
+      Launch Your Own Sidechain
+      <i class="icon right chevron"></i>
+    </a>
+  </div>
+</div>
+
+# Featured
+Sidechains with a working network can be listed here.
 
 ## Experimental Sidechains
+These sidechains are in development and testing, or are explicitly intended for non-production use.
+
 <div class="ui two stackable cards">
-  <div class="card">
+  <div class="card" style="background: url('/img/platonic-volumes.png') 100%;">
     <div class="ui image centered tiny" style="background: none;" />
       <img src="/img/rootstock-white.webp" style="margin: 1em; width: 100%;" />
     </div>
-    <div class="content">
+    <div class="content" style="background: white;">
       <h3 class="header">[Alpha](/sidechains/alpha)</h3>
       <p class="description">Alpha is the official Elements testnet.  Pegged to Bitcoin's `testnet`, it includes most of [the stable Elements][stable-elements], and is a convenient way of prototyping your application before going to production.</p>
     </div>
@@ -41,23 +56,23 @@ Want to pick your own set of Elements?  <a href="/sidechains/creating-your-own.h
       <a href="/sidechains/rootstock" class="ui primary fluid button">Learn More about Rootstock</a>
     </div>
   </div>
-  <div class="card" style="background: none;">
+  <div class="card" style="background: linear-gradient(to right, #008bbe 0%, #13e1d0 100%);">
     <div class="ui image centered tiny" style="background: none;" />
       <img src="/img/gem.png" style="margin: 1em; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Gem](/sidechains/gem)</h3>
-      <p class="description">Gem is a healthcare-focused sidechain.</p>
+      <p class="description">Gem Health is a network for developing applications and shared infrastructure for healthcare. We are building the fabric of a globally integrated healthcare continuum that’s designed to make healthcare more personal and affordable.</p>
     </div>
     <div class="extra content">
       <a href="/sidechains/gem" class="ui primary fluid button">Learn More about Gem</a>
     </div>
   </div>
-  <div class="card">
+  <div class="card" style="background: url('/img/platonic-solids.png');">
     <div class="ui image centered tiny" style="background: none;" />
       <img src="/img/create-your-own.png" style="margin: 1em; width: 100%;" />
     </div>
-    <div class="content">
+    <div class="content" style="background: white;">
       <h3 class="header">[Create Your Own](/sidechains/creating-your-own.html)</h3>
       <p class="description">Working on something interesting?  Add it here.</p>
     </div>
@@ -66,9 +81,10 @@ Want to pick your own set of Elements?  <a href="/sidechains/creating-your-own.h
     </div>
   </div>
 </div>
-<!-- ### [beta](/sidechains/beta) -->
 
 ## Production Sidechains
+These sidechains are being used on the main Bitcoin network.
+
 <div class="ui two cards">
   <div class="card">
     <div class="ui image centered tiny" style="background: none;" />
@@ -83,8 +99,6 @@ Want to pick your own set of Elements?  <a href="/sidechains/creating-your-own.h
     </div>
   </div>
 </div>
-<h3>[Liquid](/sidechains/liquid)</h3>
-Run by a federation of block signers, Liquid is a production sidechain that is secured by
-federated consensus rather than proof-of-work.
+
 
 [stable-elements]: https://elementsproject.org/elements#stable
