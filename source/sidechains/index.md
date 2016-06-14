@@ -88,7 +88,7 @@ These sidechains are being used on the main Bitcoin network.
 <div class="ui two cards">
   <div class="card">
     <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/liquid.png" style="margin: 3em 0; width: 100%;" />
+      <img src="/img/square-image.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content">
       <h3 class="header">[Liquid](/sidechains/liquid)</h3>
