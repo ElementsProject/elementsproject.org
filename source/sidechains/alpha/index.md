@@ -24,7 +24,11 @@ using different security trade-offs. We plan to, in a later release, upgrade the
 protocol adapter to support fully decentralized merge-mining of the sidechain,
 and ultimately to phase in the full 2-way pegging  mechanism.
 
-<a href="/sidechains/alpha/getting-started.html" class="ui button huge right floated primary">Getting Started with the Alpha Sidechain<i class="icon chevron right"></i></a>
+<div class="ui right huge fluid buttons">
+<a href="/sidechains/creating-your-own.html" class="ui huge button">Build my own sidechain.</a>
+<div class="or"></div>
+<a href="/sidechains/alpha/getting-started.html" class="ui huge button primary">Join the Alpha Sidechain<i class="icon chevron right"></i></a>
+</div>
 
 <div style="clear: both;"></div>
 
@@ -32,11 +36,7 @@ and ultimately to phase in the full 2-way pegging  mechanism.
 Just trying to run an Alpha node to build your prototype?  Jump straight to the
 instructions.
 
-<<<<<<< HEAD
 <a href="/sidechains/alpha/building.html" class="ui button fluid floated primary">Compiling Alpha from Source<i class="icon chevron right"></i></a>
-=======
-<a href="/sidechains/alpha/compiling.html" class="ui button fluid floated primary">Compiling Alpha from Source<i class="icon chevron right"></i></a>
->>>>>>> creating-sidechains
 
 <div style="clear: both;"></div>
 
