@@ -6,11 +6,13 @@ source: https://github.com/ElementsProject/elementsproject.github.io/edit/master
 This is a basic step-by-step guide to building your own sidechain and setting up
 a federated pegging mechanism.  This configuration works to run a sidechain with
 a 1-of-1 functionary/blocksigner. (Not tested on multiple nodes with more than 1
-signer)
+signer).
+
+There are several other ways of deriving consensus on a sidechain.  See [the Deterministic Peg Element](/elements/deterministic-peg.html) for more details.
 
 #### Elements
-Please look over the [Elements
-Project](https://github.com/ElementsProject/elements) if you haven't already.
+Please look over [the Elements
+Git Repository](https://github.com/ElementsProject/elements), if you haven't already.
 Also read [Alpha
 README](https://github.com/ElementsProject/elements/blob/alpha/alpha-README.md)
 for building dependencies and to follow along. The instructions for building the
@@ -19,8 +21,8 @@ isn't as detailed. Keep the Elements Project's Alpha-README open in a separate
 tab for reference.
 
 #### Prerequisites
-1. Linux. Building with Windows is possible - publish a guide if you know how as there isn't one publicly available! :)
-2. All dependencies for Elements-Alpha. [Build Notes](https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md)
+1. *Linux.* Building with Windows is possible - publish a guide if you know how as there isn't one publicly available! :)
+2. *All dependencies for Elements Alpha.*  See [Build Notes](https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md)
 
 #### Build
 Try to follow this order to avoid unneccessary recompilations. This is an extension of the instructions to "Run a fedpeg operator" in the Element's alpha README.
