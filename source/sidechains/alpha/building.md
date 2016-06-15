@@ -21,3 +21,5 @@ make
 </pre>
 
 The Data Directory of the alpha testnet dev sidechain lives within your existing Bitcoin [Data Directory](https://en.bitcoin.it/wiki/Data_directory).  For example, in Linux `~/.bitcoin/alphatestnet3` contains the Alpha blocks, indicies and wallet.
+
+[elements-github]: https://github.com/ElementsProject/elements
