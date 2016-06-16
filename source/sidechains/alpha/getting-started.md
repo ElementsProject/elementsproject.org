@@ -191,7 +191,7 @@ faucet] for this purpose; let's get our Bitcoin address and request some funds:
 ```bash
 ../bitcoin-cli -testnet -rpcuser=user -rpcpassword=pass getnewaddress
 ```
-You'll get an output of an address – make sure it starts with an `m`, which
+You'll get an output of an address – make sure it starts with an `m` or an `n`, which
 designates a testnet address–and plug that into [the `testnet3` bitcoin faucet
 ][testnet faucet] to request some coins.
 
