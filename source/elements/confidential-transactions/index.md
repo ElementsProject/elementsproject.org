@@ -207,7 +207,7 @@ The commitment and its checking are quite simple. Unfortunately, without
 additional measures this scheme is insecure.
 
 The problem is that the group is cyclic, and addition is mod P (a 256-bit
-prime number that defines the order of the group). As a result, addition
+prime number that defines the order of the group). As a result, an addition
 of large values can 'overflow' and behave like negative amounts. This
 means that a sums-to-zero behavior still holds when some outputs are
 negative, effectively allowing the creation of 5 coins from nothing:
