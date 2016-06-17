@@ -1,7 +1,7 @@
 ---
 title: Getting Started with the Alpha Sidechain
-edit: https://github.com/ElementsProject/elementsproject.github.io/blob/relaunch/source/sidechains/alpha/getting-started.md
-source: https://github.com/ElementsProject/elementsproject.github.io/edit/relaunch/source/sidechains/alpha/getting-started.md
+edit: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/sidechains/alpha/getting-started.md
+source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/alpha/getting-started.md
 ---
 
 You might have heard of Sidechains by now – a way to test new blockchain ideas,
@@ -135,7 +135,7 @@ before, but this time with the `alphad` binary:
 
 You'll notice some additional parameters, including `-tracksidechain` and
 `-blindtrust`, but also some RPC parameters specifying where it can find a
-"trustworthy" Bitcoin node.  In this case, we're supply our own node, which we
+"trustworthy" Bitcoin node.  In this case, we're supplying our own node, which we
 have compiled ourselves and know to be valid.
 
 When both clients complete their synchronization, you're now a fully functional Elements/Bitcoin pair on the `testnet3` network!  Now's your chance to go grab
