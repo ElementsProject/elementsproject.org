@@ -4,9 +4,6 @@ prepend site-title
   | #{page.title} &mdash;&nbsp;
 
 block content
-  
-  include partials/menu
-  
   .ui.main.text.container
     .ui.right.floated.tiny.buttons
       include partials/edit-self
@@ -20,6 +17,5 @@ block content
       a.ui.button.large.primary(href="https://github.com/ElementsProject/elements/tree/#{page.branch}")
         i.icon.code
         code #{page.branch}
-    
 
     .content !{page.content}

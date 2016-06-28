@@ -1,96 +1,12 @@
-script.
-  $(document)
-    .ready(function() {
-
-      // fix main menu to page on passing
-      $('.main.menu').visibility({
-        type: 'fixed'
-      });
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 80
-      });
-
-      // lazy load images
-      $('.image').visibility({
-        type: 'image',
-        transition: 'vertical flip in',
-        duration: 500
-      });
-
-      // show dropdown on hover
-      $('.main.menu  .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-    })
-  ;
-
-style.
-  body {
-    background-color: #FFFFFF;
-  }
-
-  .main.container {
-    margin-top: 7em;
-  }
-
-  .main.menu {
-    margin-top: 4em;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
-    transition:
-      box-shadow 0.5s ease,
-      padding 0.5s ease
-    ;
-  }
-  .main.menu .item img.logo {
-    margin-right: 1.5em;
-  }
-
-  .overlay {
-    float: left;
-    margin: 0em 3em 1em 0em;
-  }
-  .overlay .menu {
-    position: relative;
-    left: 0;
-    transition: left 0.5s ease;
-  }
-
-  .main.menu.fixed {
-    background-color: #FFFFFF;
-    border: 1px solid #DDD;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-  }
-  .overlay.fixed .menu {
-    left: 800px;
-  }
-
-  .text.container .left.floated.image {
-    margin: 2em 2em 2em -4em;
-  }
-  .text.container .right.floated.image {
-    margin: 2em -4em 2em 2em;
-  }
-
-  .ui.footer.segment {
-    margin: 5em 0em 0em;
-    padding: 5em 0em;
-  }
-
-.ui.fixed.inverted.menu
-  .ui.container
-    a.header.item(href="/") The Elements Project
-    a.item(href="/elements") Elements
-    a.item(href="/sidechains") Sidechains
-    a.item(href="/case-studies") Case Studies
-    a.item(href="/posts") Blog
-    .item
-      script(async, defer, src="https://chat.elementsproject.org/slackin.js")
-    
-    .right.menu
-      a.item(href="https://github.com/ElementsProject/elements")
-        i.icon.github.alternate
-        | GitHub
-        i.icon.chevron.right
+a.header.item(href="/") The Elements Project
+a.item(href="/elements") Elements
+a.item(href="/sidechains") Sidechains
+a.item(href="/contributing") Community
+a.item(href="/posts") Blog
+.right.menu
+  //-.item(style="width: 10em;")
+    script(async, defer, src="https://chat.elementsproject.org/slackin.js")
+  a.item(href="https://github.com/ElementsProject/elements")
+    i.icon.github.alternate
+    | GitHub
+    i.icon.chevron.right

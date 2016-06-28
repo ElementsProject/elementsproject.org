@@ -4,9 +4,6 @@ prepend site-title
   | #{page.title} &mdash;&nbsp;
 
 block content
-  
-  include partials/menu
-  
   .ui.main.text.container
     .ui.cards
       - site.posts.each(function(page, i) {
