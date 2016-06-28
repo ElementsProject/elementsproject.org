@@ -91,8 +91,8 @@ by reclaiming most of the overhead of the CT cryptographic proofs.
 
 
 This work was originally proposed by Adam Back on
-Bitcointalk in his 2013 thread "bitcoins with homomorphic value"
-[https://bitcointalk.org/index.php?topic=305791.0]. To build CT I had to
+Bitcointalk in his 2013 thread "[bitcoins with homomorphic value]
+(https://bitcointalk.org/index.php?topic=305791.0)". To build CT I had to
 implement several new cryptosystems which work in concert, and invented
 a generalization of ring signatures and several novel optimizations to
 make the result reasonably efficient.
@@ -299,12 +299,10 @@ the number in binary, and a 5-bit number can only be in the range [0,32).
 Numerous optimizations are required to make this more efficient:
 
 First, I propose a new ring
-signature formulation, a Borromean ring signature[*], which is especially
+signature formulation, a Borromean ring signature[*](https://github.com/Blockstream/borromean_paper/raw/master/borromean_draft_0.01_34241bb.pdf), which is especially
 efficient: it requires only 32 bytes per pubkey, plus 32 bytes which
 can be shared by many separate rings. This is has twice the asymptotic
 efficiency of previously proposed constructions for this application.
-
-[*] https://github.com/Blockstream/borromean_paper/raw/master/borromean_draft_0.01_34241bb.pdf
 
 Instead of expressing the amount directly, CT amounts are expressed
 using a decimal floating point where the digits are multiplied by a
