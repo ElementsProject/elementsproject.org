@@ -91,8 +91,8 @@ by reclaiming most of the overhead of the CT cryptographic proofs.
 
 
 This work was originally proposed by Adam Back on
-Bitcointalk in his 2013 thread "bitcoins with homomorphic value"
-[https://bitcointalk.org/index.php?topic=305791.0]. To build CT I had to
+Bitcointalk in his 2013 thread "[bitcoins with homomorphic value]
+(https://bitcointalk.org/index.php?topic=305791.0)". To build CT I had to
 implement several new cryptosystems which work in concert, and invented
 a generalization of ring signatures and several novel optimizations to
 make the result reasonably efficient.
@@ -207,7 +207,7 @@ The commitment and its checking are quite simple. Unfortunately, without
 additional measures this scheme is insecure.
 
 The problem is that the group is cyclic, and addition is mod P (a 256-bit
-prime number that defines the order of the group). As a result, addition
+prime number that defines the order of the group). As a result, an addition
 of large values can 'overflow' and behave like negative amounts. This
 means that a sums-to-zero behavior still holds when some outputs are
 negative, effectively allowing the creation of 5 coins from nothing:
@@ -299,12 +299,10 @@ the number in binary, and a 5-bit number can only be in the range [0,32).
 Numerous optimizations are required to make this more efficient:
 
 First, I propose a new ring
-signature formulation, a Borromean ring signature[*], which is especially
+signature formulation, a Borromean ring signature[*](https://github.com/Blockstream/borromean_paper/raw/master/borromean_draft_0.01_34241bb.pdf), which is especially
 efficient: it requires only 32 bytes per pubkey, plus 32 bytes which
 can be shared by many separate rings. This is has twice the asymptotic
 efficiency of previously proposed constructions for this application.
-
-[*] https://github.com/Blockstream/borromean_paper/raw/master/borromean_draft_0.01_34241bb.pdf
 
 Instead of expressing the amount directly, CT amounts are expressed
 using a decimal floating point where the digits are multiplied by a

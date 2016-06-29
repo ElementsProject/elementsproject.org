@@ -6,7 +6,7 @@ prepend site-title
 block content
   .ui.main.text.container
     .ui.cards
-      - site.posts.each(function(page, i) {
+      - site.posts.reverse().each(function(page, i) {
         .ui.fluid.card
           .content
             .meta
