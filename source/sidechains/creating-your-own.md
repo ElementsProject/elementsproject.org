@@ -49,7 +49,7 @@ Run testnet. If you get an error asking to rebuild the blockchain, replace `-txi
 ./bitcoind -rpcuser=$RPC_USER -rpcpassword=$RPC_PASS -testnet -txindex -daemon
 ```
 
-Checkout `alpha`. Before making any changes of your own,`fetch/merge` a [patch](https://github.com/TomMcCabe/elements/tree/patch) for a few code changes that will consolidate our settings in `sidechain-manipulation.py` and `constants.py` ([PR #86 of Elements Repo](https://github.com/ElementsProject/elements/pull/86)):
+Checkout the `alpha` branch.
 ```shell
 git checkout alpha
 git fetch https://github.com/TomMcCabe/elements patch
