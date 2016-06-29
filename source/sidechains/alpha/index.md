@@ -40,7 +40,7 @@ of signers to manage the testnet coins transferred into the sidechain via [the
 explore the new chain’s possibilities, using different security trade-offs. We
 plan to, in a later release, upgrade the protocol adapter to support fully
 decentralized merge-mining of the sidechain, and ultimately to phase in the full
-2-way pegging mechanism.
+2-way peg mechanism.
 
 #### Moving coins between Testnet and Alpha
 See [alpha-README.md](https://github.com/ElementsProject/elements/blob/alpha/alpha-README.md) for instructions on how to transfer testnet coins to the alpha network and back.  Note that there is a lengthy confirmation and contest period that you must wait for a peg transfer to complete.

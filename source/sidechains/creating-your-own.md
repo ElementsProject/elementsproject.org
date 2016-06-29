@@ -4,7 +4,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/blob/master/s
 source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/creating-your-own.md
 ---
 This is a basic step-by-step guide to building your own sidechain and setting up
-a federated pegging mechanism.  This configuration works to run a sidechain with
+a federated peg mechanism.  This configuration works to run a sidechain with
 a 1-of-1 functionary/blocksigner. (Not tested on multiple nodes with more than 1
 signer).
 
