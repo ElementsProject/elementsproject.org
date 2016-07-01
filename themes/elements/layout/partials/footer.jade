@@ -1,13 +1,18 @@
 .ui.inverted.vertical.footer.segment
   .ui.container
     .ui.stackable.inverted.divided.equal.height.stackable.grid
-      .six.wide.column
+      .three.wide.column
         h4.ui.inverted.header About
         .ui.inverted.link.list
           a.item(href="https://github.com/ElementsProject") GitHub
           a.item(href="https://github.com/ElementsProject/elementsproject.org") Source Code
 
-      //-.three.wide.column
+      .five.wide.column
+        a(href="https://chat.elementsproject.org")
+          h4.ui.inverted.header Community
+        p(style="padding-top: 1em;")
+          script(async, defer, src="https://chat.elementsproject.org/slackin.js?large")
+
 
       .seven.wide.column
         h4.ui.inverted.header Copyright
