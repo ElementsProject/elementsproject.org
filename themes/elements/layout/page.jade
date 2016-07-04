@@ -8,7 +8,8 @@ block content
     .ui.right.floated.tiny.buttons
       include partials/edit-self
 
-    h2 #{page.title}
+    if (page.title)
+      h2 #{page.title}
     if (page.image)
       img.ui.image.right.floated.small(src="#{page.image}")
     if (page.description)
