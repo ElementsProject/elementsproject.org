@@ -52,8 +52,6 @@ Run testnet. If you get an error asking to rebuild the blockchain, replace `-txi
 Checkout the `alpha` branch.
 ```shell
 git checkout alpha
-git fetch https://github.com/TomMcCabe/elements patch
-git merge FETCH_HEAD alpha
 ```
 
 With bitcoin testnet, generate an address and obtain the private/public key.
