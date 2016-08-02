@@ -2,13 +2,13 @@
 title: Basic Asset Issuance
 description: Create new assets on a sidechain by using Bitcoin as a bond.
 image: /img/asset-issuance.svg
-branch: multi-asset-0.11
+branch: alpha-0.10-multi-asset
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/asset-issuance/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/asset-issuance/index.md
 ---
 
 *Principal Investigator: Jorge Timón*
- * [feature branch multi-asset-0.10](https://github.com/ElementsProject/elements/tree/multi-asset-0.10) - branch of ongoing assets dev
+ * [alpha-0.10-multi-asset](https://github.com/ElementsProject/elements/tree/alpha-0.10-multi-asset) - branch of ongoing assets dev
 
 Users can issue their own assets which represent fungible ownership of the underlying asset type representing by the newly created units, which could theoretically represent any asset including vouchers, coupons, currencies, deposits, bonds, shares, etc (subject to the respective jurisdiction’s regulatory requirements.
 
