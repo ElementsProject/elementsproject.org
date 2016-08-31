@@ -131,7 +131,7 @@ Once your sidechain server is running, we can edit the Python files with your un
 
 Inside `contrib/fedpeg/constants.py`, change the port number on [L9](https://github.com/TomMcCabe/elements/blob/patch/contrib/fedpeg/constants.py) to the port number you specified above inside of your [src/chainparamsbase.cpp](https://github.com/ElementsProject/elements/blob/alpha/src/chainparamsbase.cpp#L43). You do NOT change the `bitcoin_url` port.
 
-We need to create a unique `redeem_script` and `redeem_script_address` for your sidechain. To do this, take the public key[s] in `chainparmas.cpp` and use the `createmultisig` RPC, which will return an address and a redeem script. Adjust [L12-L13](https://github.com/Christewart/elements/blob/sidechain/contrib/fedpeg/constants.py#L12-L13) in `constants.py` with the values given by the following RPC command:
+We need to create a unique `redeem_script` and `redeem_script_address` for your sidechain. To do this, take the public key[s] in `chainparams.cpp` and use the `createmultisig` RPC, which will return an address and a redeem script. Adjust [L12-L13](https://github.com/Christewart/elements/blob/sidechain/contrib/fedpeg/constants.py#L12-L13) in `constants.py` with the values given by the following RPC command:
 
 ```shell
 alpha-cli -testnet createmultisig [sigs_required] "[\"public key\", ...]"
