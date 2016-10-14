@@ -1,11 +1,17 @@
 extends layouts/elements
 
-block content
-  .pusher
-    .ui.inverted.vertical.masthead.center.aligned.segment(style="background: url('/img/hero-image.png'); background-size: 100%;")
-      //-.ui.container
-        .ui.large.secondary.inverted.pointing.menu
-
+block masthead
+  style.
+    .masthead.segment {
+      min-height: 700px;
+    }
+  
+  .ui.inverted.vertical.masthead.segment(style="background: url('/img/hero-image.png'); background-size: 100%;")
+    .ui.container
+      .ui.large.secondary.inverted.pointing.menu
+        include partials/menu
+        a.right.toc.item
+          i.sidebar.icon
       .ui.text.container
         h1.ui.inverted.header The Elements Project
         h2 Extend Bitcoin with composable building blocks,<br /> deployed to your very own sidechain.
@@ -17,72 +23,73 @@ block content
               | Join the Community
               i.icon.right.chevron
             
-        a.ui.huge.primary.button(href="/contributing/", style="margin-top: 1em;")
+        a.ui.huge.primary.right.floated.button(href="/contributing/", style="margin-top: 1em;")
           | Join the Community
           i.icon.right.chevron
 
-    .ui.vertical.stripe.segment
-      .ui.middle.aligned.stackable.grid.container
-        .row
-          .eight.wide.column
-            h3.ui.header Elements
-            p As open source, protocol-level technology, developers can use Elements to extend the functionality of Bitcoin and explore new applications of the Blockchain.
-            a.ui.button.primary.huge(href="/case-studies") See Who Is Using Elements
-              i.icon.right.chevron
-          .six.wide.right.floated.column
-            img.ui.medium.bordered.image(src="/img/periodic-table-of-elements.png")
+block content
+  .ui.vertical.stripe.segment
+    .ui.middle.aligned.stackable.grid.container
+      .row
+        .eight.wide.column
+          h3.ui.header Elements
+          p As open source, protocol-level technology, developers can use Elements to extend the functionality of Bitcoin and explore new applications of the Blockchain.
+          a.ui.button.primary.huge(href="/case-studies") See Who Is Using Elements
+            i.icon.right.chevron
+        .six.wide.right.floated.column
+          img.ui.medium.bordered.image(src="/img/periodic-table-of-elements.png")
 
-    .ui.vertical.stripe.segment
-      .ui.three.column.center.aligned.divided.relaxed.stackable.grid.container
-        .row
-          .column
-            h4 Confidential Transactions
-            p The Confidential Transactions Element keeps the amounts transferred in a blockchain transaction visible only to participants in the transaction.
-            a.ui.button(href="/elements/confidential-transactions")
-              | Read the specs
-              i.icon.chevron.right
-          .column
-            h4 Segregated Witness
-            p The Segregated Witness Element eliminates all known forms of transaction malleability, and allows significant blockchain pruning optimizations.
-            a.ui.button(href="/elements/segregated-witness")
-              | Read the specs
-              i.icon.chevron.right
-          .column
-            h4 The Periodic Table
-            p Elements are open-source bundles that can be used alongside one another to construct new, novel applications using the Bitcoin blockchain.
-            a.ui.button.primary(href="/elements")
-              | Browse The Elements
-              i.icon.chevron.right
+  .ui.vertical.stripe.segment
+    .ui.three.column.center.aligned.divided.relaxed.stackable.grid.container
+      .row
+        .column
+          h4 Confidential Transactions
+          p The Confidential Transactions Element keeps the amounts transferred in a blockchain transaction visible only to participants in the transaction.
+          a.ui.button(href="/elements/confidential-transactions")
+            | Read the specs
+            i.icon.chevron.right
+        .column
+          h4 Segregated Witness
+          p The Segregated Witness Element eliminates all known forms of transaction malleability, and allows significant blockchain pruning optimizations.
+          a.ui.button(href="/elements/segregated-witness")
+            | Read the specs
+            i.icon.chevron.right
+        .column
+          h4 The Periodic Table
+          p Elements are open-source bundles that can be used alongside one another to construct new, novel applications using the Bitcoin blockchain.
+          a.ui.button.primary(href="/elements")
+            | Browse The Elements
+            i.icon.chevron.right
 
-    .ui.vertical.stripe.segment
-      .ui.middle.aligned.stackable.grid.container
-        .row
-          .eight.wide.column
-            h3.ui.header Sidechains
-            p The easiest way to get started with Elements is by using one of the <a href="/sidechains#experimental">experimental sidechains</a>, such as <a href="/sidechains/alpha">alpha</a><!-- , or the newest network run by Blockstream, <a href="/sidechains/beta">beta</a> -->.
-            a.ui.button.primary.huge(href="/sidechains") Browse Known Sidechains
-              i.icon.right.chevron
-          .six.wide.right.floated.column
-            img.ui.medium.bordered.round.image(src="/img/square-image.png")
+  .ui.vertical.stripe.segment
+    .ui.middle.aligned.stackable.grid.container
+      .row
+        .eight.wide.column
+          h3.ui.header Sidechains
+          p The easiest way to get started with Elements is by using one of the <a href="/sidechains#experimental">experimental sidechains</a>, such as <a href="/sidechains/alpha">alpha</a><!-- , or the newest network run by Blockstream, <a href="/sidechains/beta">beta</a> -->.
+          a.ui.button.primary.huge(href="/sidechains") Browse Known Sidechains
+            i.icon.right.chevron
+        .six.wide.right.floated.column
+          img.ui.medium.bordered.round.image(src="/img/square-image.png")
 
-    .ui.vertical.stripe.segment
-      .ui.equal.width.stackable.internally.celled.grid
-        .center.aligned.row 
-          .column
-            h3.ui.header alpha
-            p Build your prototype on top of <code>alpha</code>, the first pegged sidechain.  <code>alpha</code> includes all "production-ready" Elements, including Segregated Witness and Confidential Transactions.
-            a.ui.large.button(href="/sidechains/alpha")
-              | Learn About Alpha
-              i.icon.right.chevron
-          .column
-            h3.ui.header ???
-            p You could list your sidechain here!  If you've deployed your network to the public, you can add it via a simple pull request.
-            a.ui.large.button(href="/sidechains")
-              | Add Your Sidechain
-              i.icon.right.chevron
-          //-.column
-            h3.ui.header Liquid
-            p Liquid is a production-deployed sidechain that focuses on rapid settlement between exchanges.  It runs in production, and can be used today.
-            a.ui.large.button(href="/sidechains/liquid")
-              | Learn About Liquid
-              i.icon.right.chevron
+  .ui.vertical.stripe.segment
+    .ui.equal.width.stackable.internally.celled.grid
+      .center.aligned.row 
+        .column
+          h3.ui.header alpha
+          p Build your prototype on top of <code>alpha</code>, the first pegged sidechain.  <code>alpha</code> includes all "production-ready" Elements, including Segregated Witness and Confidential Transactions.
+          a.ui.large.button(href="/sidechains/alpha")
+            | Learn About Alpha
+            i.icon.right.chevron
+        .column
+          h3.ui.header ???
+          p You could list your sidechain here!  If you've deployed your network to the public, you can add it via a simple pull request.
+          a.ui.large.button(href="/sidechains")
+            | Add Your Sidechain
+            i.icon.right.chevron
+        //-.column
+          h3.ui.header Liquid
+          p Liquid is a production-deployed sidechain that focuses on rapid settlement between exchanges.  It runs in production, and can be used today.
+          a.ui.large.button(href="/sidechains/liquid")
+            | Learn About Liquid
+            i.icon.right.chevron

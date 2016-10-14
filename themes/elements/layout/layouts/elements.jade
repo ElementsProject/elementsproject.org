@@ -6,17 +6,42 @@ html(lang="en")
 
   body
     block header
-      .ui.large.top.fixed.hidden.menu
+      .ui.large.top.fixed.hidden.inverted.menu
         .ui.container
-          .active.item Home
-          .item Elements
-          .item Sidechains
-          
-          .right.menu
-            .item
-              a.ui.button test
+          include ../partials/menu
+      .ui.vertical.inverted.sidebar.right.large.menu
+        .ui.center.aligned.inverted.header
+          include ../partials/menu
+    .pusher
+      block masthead
+        .ui.inverted.vertical.masthead.segment
+          .ui.container
+            .ui.large.secondary.inverted.pointing.menu
+              include ../partials/menu
+              a.right.toc.item
+                i.sidebar.icon
 
-    block content
+      .ui.container
+        .content
+          block content
 
-    block footer
-      include ../partials/footer
+      block footer
+        include ../partials/footer
+
+    script.
+      window.addEventListener('load', function() {
+        // fix menu when passed
+        $('.masthead').visibility({
+          once: false,
+          onBottomPassed: function() {
+            console.log('.masthead.onBottomPassed()')
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        });
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar').sidebar('attach events', '.toc.item');
+      });
