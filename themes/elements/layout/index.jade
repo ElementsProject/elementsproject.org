@@ -66,11 +66,17 @@ block content
       .row
         .eight.wide.column
           h3.ui.header Sidechains
-          p The easiest way to get started with Elements is by using one of the <a href="/sidechains#experimental">experimental sidechains</a>, such as <a href="/sidechains/alpha">alpha</a><!-- , or the newest network run by Blockstream, <a href="/sidechains/beta">beta</a> -->.
+          p Sidechains are extensions to existing blockchains, enhancing their privacy and functionality by adding features like smart contracts and confidential transactions.
           a.ui.button.primary.huge(href="/sidechains") Browse Known Sidechains
             i.icon.right.chevron
         .six.wide.right.floated.column
-          img.ui.medium.bordered.round.image(src="/img/square-image.png")
+          .sidechains.animated(style="position: absolute;")
+            .sidechain
+              img.medium.plain.spin(src="img/sidechains/5.svg", style="left: -3em; top: -19em;")
+            .sidechain
+              img.medium.plain.spin(src="img/sidechains/6.svg", style="left: 4em; top: -23em;")
+            .sidechain
+              img.medium.plain.spin(src="img/sidechains/7.svg", style="left: 3em; top: -14em;")
 
   .ui.vertical.stripe.segment
     .ui.equal.width.stackable.internally.celled.grid

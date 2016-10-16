@@ -42,9 +42,12 @@ Bitcoin and Elements also require a list of dependencies you'll need installed
 before you're able to compile, including `libssl`, `libboost`, and a number of
 other `libboost-*` packages:
 
-_**Important!** Make sure to use `libdb4.8`, **not** `libdb5.1` or later!  These
-packages break certain functionality in Bitcoin and will not be conducive to a
-successful build!_
+_**Important!** Make sure to use `libdb4.8`, **not** `libdb5.1` or later!  5.1 will break certain functionality in Bitcoin and will not be conducive to a
+successful build! An installation candidate for 4.8 can be made available by adding the Bitcoin PPA to your apt sources (see below)._
+
+```bash
+sudo add-apt-repository ppa:bitcoin/bitcoin && sudo apt-get update
+```
 
 ```bash
 sudo apt-get install libssl-dev libboost-all-dev libdb4.8-dev libdb4.8++-dev
