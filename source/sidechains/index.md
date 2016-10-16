@@ -44,7 +44,7 @@ These sidechains are in development and testing, or are explicitly intended for 
       <a href="/sidechains/alpha" class="ui primary fluid button">Learn More about Alpha</a>
     </div>
   </div>
-  <div class="card" style="background: url('http://img.youtube.com/vi/h3Qd_k3FBKQ/maxresdefault.jpg');">
+  <div class="card" style="background: url('//img.youtube.com/vi/h3Qd_k3FBKQ/maxresdefault.jpg');">
     <div class="ui image centered tiny" style="background: none;" />
       <img src="/img/rootstock-white.webp" style="margin: 3em 0; width: 100%;" />
     </div>
