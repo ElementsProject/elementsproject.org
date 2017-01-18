@@ -134,6 +134,33 @@ pre {
   padding: inherit;
 }
 
+.sidechains * {
+  display: inline-block;
+}
+
+.sidechains * img {
+  padding: 0;
+  position: absolute;
+  top: -22em;
+}
+
+.sidechains * img.spin {
+  -webkit-animation: spin 30s infinite linear;
+}
+
+.sidechains * img.backspin {
+  -webkit-animation: backspin 30s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	0%  {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes backspin {
+	0%  {-webkit-transform: rotate(360deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+
 
 /* old styles */
 /* TODO: remove them */
