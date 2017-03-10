@@ -24,32 +24,32 @@ easily create test chains and networks.
 1. Start Elements:
   > `elementsd -regtest -daemon`
 2. Create an alias for the RPC client:
-  > `alias bc="elements-cli -regtest"`    
+  > `alias ec="elements-cli -regtest"`    
   <div class="ui info message">
-    In Elements, blocks have to be signed by a quorum of the federation. However, just like in Bitcoin the conditions in regtest modes are not enforced, so you can simply create a block with `bc generate 1`.
+    In Elements, blocks have to be signed by a quorum of the federation. However, just like in Bitcoin the conditions in regtest modes are not enforced, so you can simply create a block with `ec generate 1`.
   </div>
 3. Create a chain where we predetermine who is allowed to sign blocks. We start with creating a fresh keypair.
-  >     ADDR=`bc getnewaddress`
-  >     PUBKEY=`bc validateaddress $ADDR | jq -r '.pubkey'`
-  >     PRIVKEY=`bc dumpprivkey $ADDR`
+  >     ADDR=`ec getnewaddress`
+  >     PUBKEY=`ec validateaddress $ADDR | jq -r '.pubkey'`
+  >     PRIVKEY=`ec dumpprivkey $ADDR`
 4. Create a 1-of-1 multisig script to use as a block requirement.
-  >     SIGNBLOCKSCRIPT=`bc createmultisig 1 \[\"$PUBKEY\"\] | jq -r '.redeemScript'`
+  >     SIGNBLOCKSCRIPT=`ec createmultisig 1 \[\"$PUBKEY\"\] | jq -r '.redeemScript'`
 5. Stop the daemon and create a new chain using the blocksigner script
-  >     bc stop
+  >     ec stop
   >     rm -rf ~/.bitcoin/elementsregtest
   >     elementsd -regtest -daemon -signblockscript=$SIGNBLOCKSCRIPT
-  >     bc importprivkey $PRIVKEY
-  >     NEW_BLOCK=`bc getnewblockhex`
-  >     BLOCKSIG=`bc signblock $NEW_BLOCK`
+  >     ec importprivkey $PRIVKEY
+  >     NEW_BLOCK=`ec getnewblockhex`
+  >     BLOCKSIG=`ec signblock $NEW_BLOCK`
     <div class="ui info message">
       If there were multiple blocksigners, you'd need to distribute `NEW_BLOCK`, collect signatures, then call `combineblocksigs`.  We'll leave this as an excercise to the reader.
     </div>
-  >     SIGNED_BLOCK=`bc combineblocksigs $NEW_BLOCK \[\"$BLOCKSIG\"\] | jq -r '.hex'`
+  >     SIGNED_BLOCK=`ec combineblocksigs $NEW_BLOCK \[\"$BLOCKSIG\"\] | jq -r '.hex'`
     * ensure that the output of combineblocksigs has "complete" true
-  > `bc getblockcount`
+  > `ec getblockcount`
     * check the current block count
-  > `bc submitblock $SIGNED_BLOCK`
-  > `bc getblockcount`
+  > `ec submitblock $SIGNED_BLOCK`
+  > `ec getblockcount`
     * check that the chain advanced by one block
 
 Block generation can be easily automated in a shell script.
@@ -57,7 +57,7 @@ Block generation can be easily automated in a shell script.
 #### Congratulations!
 Your chain is online and already accessible, just let other nodes connect to you:
 ```
-bc addnode <your_url>
+ec addnode <your_url>
 ```
 
 ### Moving Bitcoin into your Sidechain
