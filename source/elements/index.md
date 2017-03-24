@@ -20,6 +20,17 @@ Elements is an open source collaborative project where we work on a collection o
 These are the features under currently under investigation as part of [the Alpha developer sidechain](/sidechains/alpha).
 
 <div class="ui four doubling cards">
+  <a class="card tooltipped" title="Blockchains keep track of the movement of tokens, and this Element allows you to create your own tokens on a sidechain." href="/elements/asset-issuance">
+    <div class="image">
+      <img src="/img/asset-issuance.svg" />
+    </div>
+    <div class="content">
+      <div class="ui small statistic">
+        <div class="value">Ai</div>
+        <div class="label">Asset Issuance</div>
+      </div>
+    </div>
+  </a>
   <a class="card tooltipped" title="Confidential Transactions are a new type of transaction that allow the amount of tokens being transferred to be concealed, but mathematically proven." href="/elements/confidential-transactions">
     <div class="image">
       <img src="/img/confidential-transactions.svg" />
@@ -157,17 +168,6 @@ These are the features under currently under investigation as part of [the Alpha
 These are some of the features currently under development, but are not yet ready for deployment on a public sidechain.
 
 <div class="ui four doubling cards">
-  <a class="card tooltipped" title="Blockchains keep track of the movement of tokens, and this Element allows you to create your own tokens on a sidechain." href="/elements/asset-issuance">
-    <div class="image">
-      <img src="/img/asset-issuance.svg" />
-    </div>
-    <div class="content">
-      <div class="ui small statistic">
-        <div class="value">Ai</div>
-        <div class="label">Asset Issuance</div>
-      </div>
-    </div>
-  </a>
   <a class="card tooltipped" title="Allow arbitrary, miner-rewritable bitmasks of transaction inputs and outputs." href="/elements/bitmask-sighash-modes">
     <div class="image">
       <img src="/img/bitmask-sighash-modes.svg" />
