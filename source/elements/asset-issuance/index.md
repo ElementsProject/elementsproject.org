@@ -12,10 +12,21 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/s
   <p>Read <a href="/elements/asset-issuance/investigation.html">Jorge Timon's original investigation</a> to learn about the origins of this Element.</p>
 </div>
 
-Users can issue their own assets which represent fungible ownership of the underlying asset type representing by the newly created units, which could theoretically represent any asset including vouchers, coupons, currencies, deposits, bonds, shares, etc. (subject to the respective jurisdiction’s regulatory requirements).
+Users can issue their own confidential assets which represent fungible ownership
+of the underlying asset type representing by the newly created units, which
+could theoretically represent any asset including vouchers, coupons, currencies,
+deposits, bonds, shares, etc. (subject to the respective jurisdiction’s
+regulatory requirements).
+
+These assets can optionally be "blinded", causing the data in the transactions
+(including amount and asset type) to be cryptographically obfuscated in such a
+way that only the participating parties can see.  Particpants may choose to
+reveal a "blinding key", which grants visibility into the transaction.
 
 This opens the door for building trustless exchanges, options, and other
-advanced smart contracts involving those arbitrary assets and the "hostcoin".
+advanced smart contracts involving those arbitrary assets and a "hostcoin".
+
+### Issuing Assets
 
 ### How it works
 All outputs are tagged with their asset identifier. Consensus rules are modified so that the total inputs and outputs are checked separately per asset.
