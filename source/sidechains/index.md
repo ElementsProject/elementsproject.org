@@ -26,7 +26,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/s
 </div>
 
 # Featured
-Sidechains with a working network can be listed here.
+Sidechains with a working network can be listed here.  <a href="https://github.com/ElementsProject/elementsproject.org/edit/master/source/sidechains/index.md">Add Yours &raquo;</a>
 
 ## Experimental Sidechains
 These sidechains are in development and testing, or are explicitly intended for non-production use.
