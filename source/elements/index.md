@@ -17,7 +17,8 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/s
 Elements is an open source collaborative project where we work on a collection of experiments to more rapidly bring technical innovation to Bitcoin.  Elements are features that are proposed and developed in this technical community that in arbitrary combinations can be fashioned into sidechains.
 
 ## Current Elements
-These are the features under currently under investigation as part of [the Alpha developer sidechain](/sidechains/alpha).
+These are the features under currently available in [Elements Core][github], the
+open-source reference implementation for sidechains.
 
 <div class="ui three doubling cards">
   <a class="card tooltipped" title="Blockchains keep track of the movement of tokens, and this Element allows you to create your own tokens on a sidechain." href="/elements/asset-issuance">
@@ -191,3 +192,6 @@ These are some of the features currently under development, but are not yet read
     </div>
   </a>
 </div>
+
+[github]: https://github.com/ElementsProject/elements
+[liquid]: /sidechains/liquid
