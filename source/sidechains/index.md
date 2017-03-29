@@ -85,10 +85,10 @@ These sidechains are in development and testing, or are explicitly intended for 
 ## Production Sidechains
 These sidechains are being used on the main Bitcoin network.
 
-<div class="ui two cards">
-  <div class="card">
-    <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/square-image.png" style="margin: 3em 0; width: 100%;" />
+<div class="ui cards">
+  <div class="ui fluid card">
+    <div class="ui image centered medium" style="background: none;" />
+      <img src="/img/liquid-logo.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content">
       <h3 class="header">[Liquid](/sidechains/liquid)</h3>
