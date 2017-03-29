@@ -6,13 +6,13 @@ block masthead
       min-height: 700px;
     }
   
-  .ui.inverted.vertical.masthead.segment(style="background: url('/img/hero-image.png'); background-size: 100%;")
+  .ui.inverted.vertical.center.aligned.masthead.segment(style="background: url('/img/hero-image.png'); background-size: 100%;")
     .ui.container
       .ui.large.secondary.inverted.pointing.menu
         include partials/menu
         a.right.toc.item
           i.sidebar.icon
-      .ui.text.container
+      .ui.text.container(style="margin-top: -6em;")
         h1.ui.inverted.header The Elements Project
         h2 Extend Bitcoin with composable building blocks,<br /> deployed to your very own sidechain.
 
@@ -23,7 +23,7 @@ block masthead
               | Join the Community
               i.icon.right.chevron
             
-        a.ui.huge.primary.right.floated.button(href="/contributing/", style="margin-top: 1em;")
+        a.ui.huge.primary.button(href="/contributing/", style="margin-top: 2em; margin-bottom: -2em;")
           | Join the Community
           i.icon.right.chevron
 

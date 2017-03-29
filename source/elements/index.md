@@ -19,7 +19,7 @@ Elements is an open source collaborative project where we work on a collection o
 ## Current Elements
 These are the features under currently under investigation as part of [the Alpha developer sidechain](/sidechains/alpha).
 
-<div class="ui four doubling cards">
+<div class="ui three doubling cards">
   <a class="card tooltipped" title="Confidential Transactions are a new type of transaction that allow the amount of tokens being transferred to be concealed, but mathematically proven." href="/elements/confidential-transactions">
     <div class="image">
       <img src="/img/confidential-transactions.svg" />
