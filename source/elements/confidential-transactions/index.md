@@ -21,113 +21,33 @@ be undermined.
 
 <div class="ui message">
   <h4 class="header">Did you know?</h4>
-  <p>By sharing the blinding key used in the construction of a single confidential transaction, users can share access to the transaction's details.</p>
+  <p>By sharing the blinding key used in the construction of a single confidential transaction, users can share access to the transaction's details.  <a href="/elements/confidential-transactions/selective-disclosure.html">Read more about selective disclosure &raquo;</a></p>
 </div>
 
-#### In Practice
+### Using Confidential Transactions
 The payment flow when using the Confidential Transactions Element is nearly
 identical to Bitcoin Core on the surface:
 
 ```
-elements-cli getnewaddress
-XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq
+$ elements-cli getnewaddress
+> CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iPUkLQ168Kqptfnwmpxr2Bf7ipQsagi
 
-elements-cli sendtoaddress XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq 0.005
-82b2c5122207e5f33e7adadc6a4aab16a170e16028f0b0cf2c04f9d17d6f0321
+$ elements-cli sendtoaddress CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iPUkLQ168Kqptfnwmpxr2Bf7ipQsagi 0.005
+> 82b2c5122207e5f33e7adadc6a4aab16a170e16028f0b0cf2c04f9d17d6f0321
+// ^ this is the transaction id
 ```
 
 The key difference from Bitcoin is the addition of cryptographic privacy. These
 transactions differ in that the the amounts transferred are kept visible only to
 participants in the transaction (and those they designate).
 
-#### Confidential Addresses
-The most visible implication of Confidential Transactions is the introduction of
-a new default address type, confidential addresses:
-
-```
-XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq
-```
-
-The most obvious differences are that it starts with ``XoR`` and is longer than
-usual. This is due to the inclusion of a public blinding key prepended to the
-base address. In the Liquid wallet the blinding key is derived by using the
-wallet's master blinding key and unblinded P2PKH address. Therefore the receiver
-alone can decrypt the sent amount, and can hand it to auditors if needed. On the
-sender's side, ``sendtoaddress`` will use this pubkey to transmit the necessary
-info to the receiver, encrypted, and inside the transaction itself. The sender's
-wallet will also record the amount and hold this in the ``wallet.dat`` metadata
-as well as the ``audit.log`` file.
-
-```
-elements-cli validateaddress XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq
-{
-  "isvalid": true,
-  "address": "XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq",
-  "scriptPubKey": "76a91448a67bbdaf57b6f55b50f02fcaacfa079900853588ac",
-  "confidential_key": "02483237addc73befdb9b851f948c1488cbb7cf1a59ba8af36be1c479e0f6e8bc7",
-  "unconfidential": "QTE8CaT6FcJEqkCR4ZGdoUJfas57eDqY6q",
-  "ismine": true,
-  "iswatchonly": false,
-  "isscript": false,
-  "pubkey": "0347b013d415f7dc964cfadd0bb0627c48ae6ae27a58cdd37d71990eaf8f38c60c",
-  "iscompressed": true,
-  "account": ""
-}
-```
-
-As you can see the unconfidential P2PKH address starts with a `Q`. P2SH start
-with `H`. Most RPC calls outside of ``getnewaddress`` (e.g., ``listunspent``)
-will return the unblinded version of addresses. If you provide an unconfidential
-address to ``validateaddress`` it will show the confidential address.
-
-You **must** use the confidential address in ``sendtoaddress``, ``sendfrom``,
-``sendmany`` and ``createrawtransaction`` if you want to create confidential
-transactions. Therefore, when you want to receive confidential transactions you
-must give the *confidential* address to the sender. For all other RPC's except
-``dumpblindingkey`` it does not matter whether the confidential or
-unconfidential address is provided.
-
-In order to execute a third-party audit of transaction amounts, the blinding key
-can be exported by the receiver and passed on to the auditor.
-
-```
-elements-cli dumpblindingkey XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq
-5fd02f714d52b68bbbfef3b8e6d83be646fad1de5150e83d26a28496e00a2146
-```
-
-The auditor may then import the address and blinding key with
-``importblindingkey`` to observe watch-only amounts.
-
-```
-elements-cli importaddress XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq
-elements-cli listtransactions "*" 1 0 true
-[
-]
-elements-cli importblindingkey XoR8jNLkTr7VmSTRxWh1pizJgcXX6cuDD3nxNpeGAEmvitWuZ6eDzJcnVbUCtko6LAxVvqTuPhFuXTJq 5fd02f714d52b68bbbfef3b8e6d83be646fad1de5150e83d26a28496e00a2146
-elements-cli listtransactions "*" 1 0 true
-[
-  {
-    "involvesWatchonly": true,
-    "account": "",
-    "address": "QTE8CaT6FcJEqkCR4ZGdoUJfas57eDqY6q",
-    "category": "receive",
-    "amount": 0.00500000,
-    "label": "",
-    "vout": 1,
-    "confirmations": 35,
-    "blockhash": "708f969b4fb1c705b82fa3ed309abc7a3d9b0e87aa6e5d17542bb7ee04c8e1f1",
-    "blockindex": 1,
-    "blocktime": 1488223140,
-    "txid": "82b2c5122207e5f33e7adadc6a4aab16a170e16028f0b0cf2c04f9d17d6f0321",
-    "walletconflicts": [
-    ],
-    "time": 1488223140,
-    "timereceived": 1488225018,
-    "bip125-replaceable": "no",
-    "blindingfactors": "0000000000000000000000000000000000000000000000000000000000000000:71260137a80039dd8cee330d9f7bba625697dc53098cf54d625242946f26997b:"
-  }
-]
-```
+<div class="ui icon info message">
+  <i class="idea icon"></i>
+  <div class="content">
+    <h4 class="header">Confidential Addresses</h4>
+    <p>Confidential Addresses may be new to you.  <a href="/elements/confidential-transactions/addresses.html">Learn about Confidential Addresses &raquo;</a></p>
+  </div>
+</div>
 
 The ``createrawtransaction`` API in Liquid works similar to Bitcoin's raw
 transactions with the following differences:
