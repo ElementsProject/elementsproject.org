@@ -1,3 +1,6 @@
+---
+title: Confidential Transaction, the Initial Investigation
+---
 ### Investigation
 Principal Investigator: [Gregory Maxwell](/contributors/gmaxwell)
 
