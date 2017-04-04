@@ -82,17 +82,14 @@ $ elements-cli getwalletinfo
 ```
 
 ### How it works
-All outputs are tagged with their asset identifier. Consensus rules are modified
-so that the total inputs and outputs are checked separately per asset. A new
-transaction type is added for creating issued assets (asset definition
-transactions). Like coinbase transactions, asset definition transactions (the
-new transaction type) have a null input, but unlike coinbases, asset definition
-transactions have more inputs in addition to that first null input. This
-difference not only helps us distinguish between the two: it also guarantees a
-source of entropy for the asset id (which is the `sha256` hash of the
-transaction). Within an asset definition transaction, any number of outputs with
-`0` as asset ID can be included with any amount and they will be treated as the
-initial unspent outputs for the newly created asset.
+All outputs are tagged with an asset commitment. Like CT, the consensus rules
+are such that instead of checking that amounts are balanced, the value
+commitments are checked for balance. A new transaction type is added for
+creating issued assets (asset definition transactions). Asset definition
+transactions have explicit `assetIssuance` fields embedded within transaction
+inputs, up to one issuance per input, which denote the issuance of both the
+asset itself and the reissuance tokens if desired. Embedding issuances within an
+input allows us to re-use the entropy as a NUMS for the asset type itself. 
 
 This technology is similar to colored coins in many ways, but explicit and
 consensus-enforced tagging has many advantages:
