@@ -8,8 +8,8 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/s
 ---
 
 <div class="ui info message">
-  <h4 class="header">Looking for the original investigation?</h4>
-  <p>Read <a href="/elements/asset-issuance/investigation.html">Jorge Timon's original investigation</a> to learn about the origins of this Element.</p>
+  <h4 class="header">Want the cryptographic breakdown?</h4>
+  <p>Read <a href="/elements/asset-issuance/confidential-assets.html">Andrew Poelstra's deep dive on Confidential Assets.</p>
 </div>
 
 Users can issue their own confidential assets which represent fungible ownership
@@ -104,3 +104,8 @@ consensus-enforced tagging has many advantages:
 
 Currently only the hostcoin can be used to pay fees, but it should be possible
 to pay fees of different asset types simultaneously.
+
+<div class="ui info message">
+  <h4 class="header">Looking for the original investigation?</h4>
+  <p>Read <a href="/elements/asset-issuance/investigation.html">Jorge Timon's original investigation</a> to learn about the origins of this Element.</p>
+</div>
