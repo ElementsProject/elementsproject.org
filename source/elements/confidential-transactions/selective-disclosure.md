@@ -55,25 +55,25 @@ $ elements-cli listtransactions "*" 1 0 true
 ```
 
 You may also inspect an address in full:
-  ```
-  $ elements-cli validateaddress CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iPUkLQ168Kqptfnwmpxr2Bf7ipQsagi
-  > {
-    "isvalid": true,
-    "address": "CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iPUkLQ168Kqptfnwmpxr2Bf7ipQsagi",
-    "scriptPubKey": "76a91405d5c237c5f2d90cfa22a22b75a1d1c1ede021a088ac",
-    "confidential_key": "03b0f93d729839d3d96bfd7e20f11c7c6ae2016644d0d4cded6332dbfb61ed9067",
-    "unconfidential": "2dZxbqgzXvANyj9SmyRR9LX3R2k8hg4iUWa",
-    "ismine": true,
-    "iswatchonly": false,
-    "isscript": false,
-    "pubkey": "031f17ad1acce63acf2d04cc59cb24423ab30f9345dd17476fd2380b02f878295d",
-    "iscompressed": true,
-    "account": "",
-    "hdkeypath": "m/0'/0'/10'",
-    "hdmasterkeyid": "f5ff0a90ac04830fde2f952cae9e076f9c2b4d39"
-  }
+```
+$ elements-cli validateaddress CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iPUkLQ168Kqptfnwmpxr2Bf7ipQsagi
+> {
+  "isvalid": true,
+  "address": "CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iPUkLQ168Kqptfnwmpxr2Bf7ipQsagi",
+  "scriptPubKey": "76a91405d5c237c5f2d90cfa22a22b75a1d1c1ede021a088ac",
+  "confidential_key": "03b0f93d729839d3d96bfd7e20f11c7c6ae2016644d0d4cded6332dbfb61ed9067",
+  "unconfidential": "2dZxbqgzXvANyj9SmyRR9LX3R2k8hg4iUWa",
+  "ismine": true,
+  "iswatchonly": false,
+  "isscript": false,
+  "pubkey": "031f17ad1acce63acf2d04cc59cb24423ab30f9345dd17476fd2380b02f878295d",
+  "iscompressed": true,
+  "account": "",
+  "hdkeypath": "m/0'/0'/10'",
+  "hdmasterkeyid": "f5ff0a90ac04830fde2f952cae9e076f9c2b4d39"
+}
 
-  ```
+```
   
 [confidential-transactions]: /elements/confidential-transactions
 

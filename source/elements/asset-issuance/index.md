@@ -40,17 +40,8 @@ $ elements-cli issueasset 1000 200
 }
 ```
 
-It may be convenient to create a name for this asset using `addassetlabel`.  <strong>This label can be used in place of the ID for all asset-compatible RPC calls.</strong>
-
-```
-$ elements-cli addassetlabel 8854427e5ffcb0b837e85832b901b1135cc4ac766f537e2a7f07b71a76c5b9cf funcoin
-$ elements-cli dumpassetlabels
-> {
-  "achievement": "aef740ae340f3abbb620699fc243021572c2e9d966f88f98ba26999ddaa54d34",
-  "bitcoin": "09f663de96be771f50cab5ded00256ffe63773e2eaa9a604092951cc3d7c6621",
-  "funcoin": "8854427e5ffcb0b837e85832b901b1135cc4ac766f537e2a7f07b71a76c5b9cf"
-}
-```
+You can add convenient names for these assets by passing `-assetdir` to Elements
+Core, which accepts a `hexidstring:label` map of the assets to their labels.
 
 #### Re-issuance
 Re-issuing an asset is effectively a provable inflation in the asset type.  To

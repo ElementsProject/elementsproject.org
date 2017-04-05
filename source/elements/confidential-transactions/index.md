@@ -49,7 +49,7 @@ participants in the transaction (and those they designate).
   </div>
 </div>
 
-The ``createrawtransaction`` API in Liquid works similar to Bitcoin's raw
+The ``createrawtransaction`` API in Elements works similar to Bitcoin's raw
 transactions with the following differences:
 
 1. The intent to create a confidential output is indicated by using a confidential address for the destination.
@@ -70,14 +70,14 @@ elements-cli sendrawtransaction $TX
 ```
 
 ### Limitations
-The implementation of Confidential Transactions in Liquid has some important
-limitations to be aware of. The CT implementation only hides a certain number of
-the digits of the amount of each transaction output. The exact numeric limits
-will be set once the production Liquid network is ready, but they will work as
-follows: There will be a 'minimum confidential amount' that will be a round
-number of BTC, probably around 0.0001 BTC. There will be a 'maximum confidential
-amount' that will be 2<sup>32</sup> times the minimum amount, probably around
-500,000 BTC.
+The implementation of Confidential Transactions as it appears in Elements has
+some important limitations to be aware of.
+
+For example, the implementation only hides a certain number of the digits of the
+amount of each transaction output, dependent on the range proof's "blinding
+coverage" at a desired precision level.  Subsequently, there is a 'minimum
+confidential amount' that around 0.0001 BTC, and a 'maximum confidential amount'
+that is 2<sup>32</sup> times the minimum amount.
 
 Digits smaller than the minimum will be revealed to observers; for example, if
 the minimum is 0.0001 BTC, a transaction output of 123.456789 BTC will look like
@@ -88,10 +88,8 @@ values can be rounded to the minimum to avoid revealing information in this way
 if preferred.
 
 A transaction output larger than the maximum will reveal the order of magnitude
-of the amount to observers, AND will reveal additional digits at the bottom of
-the amount. (Technical details: The minimum amount will effectively be 'raised'
-such that 2<sup>32</sup> times the new minimum is large enough to cover the
-transaction.)
+of the amount to observers, _and_ will reveal additional digits at the bottom of
+the amount.
 
 For example, if the maximum is 500k BTC, then all outputs under
 that amount will look the same, but an output between 500k and 5M BTC will be
