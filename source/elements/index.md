@@ -18,7 +18,11 @@ Elements is an open source collaborative project where we work on a collection o
 
 ## Current Elements
 These are the features under currently available in [Elements Core][github], the
-open-source reference implementation for sidechains.
+open-source reference implementation for sidechains.  For projects built with
+the latest version of Elements, such as [Liquid][liquid], you can expect them to
+support each of these features.
+
+For a list of proposed Elements, see the bottom of this document.
 
 <div class="ui three doubling cards">
   <a class="card tooltipped" title="Blockchains keep track of the movement of tokens, and this Element allows you to create your own tokens on a sidechain." href="/elements/asset-issuance">
@@ -30,6 +34,11 @@ open-source reference implementation for sidechains.
         <div class="value">Ai</div>
         <div class="label">Asset Issuance</div>
       </div>
+    </div>
+    <div class="extra content">
+      <small>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
+      </small>
     </div>
   </a>
   <a class="card tooltipped" title="Confidential Transactions are a new type of transaction that allow the amount of tokens being transferred to be concealed, but mathematically proven." href="/elements/confidential-transactions">
@@ -44,7 +53,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
       </small>
     </div>
   </a>
@@ -60,7 +69,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
         <i class="icon setting tooltipped" title="This feature is being integrated into the Bitcoin blockchain."></i>
         <!-- <i class="icon bitcoin tooltipped" title="This feature is deployed on the Bitcoin blockchain."></i> -->
       </small>
@@ -78,7 +87,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
       </small>
     </div>
   </a>
@@ -94,7 +103,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
       </small>
     </div>
   </a>
@@ -110,7 +119,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
         <i class="icon setting tooltipped" title="This feature is being integrated into the Bitcoin blockchain."></i>
       </small>
     </div>
@@ -127,7 +136,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
       </small>
     </div>
   </a>
@@ -143,7 +152,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
       </small>
     </div>
   </a>
@@ -159,7 +168,7 @@ open-source reference implementation for sidechains.
     </div>
     <div class="extra content">
       <small>
-        <i class="icon lab tooltipped" title="This feature is deployed to the alpha sidechain."></i>
+        <i class="icon lab tooltipped" title="The Element is enabled by default."></i>
       </small>
     </div>
   </a>
