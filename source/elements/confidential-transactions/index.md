@@ -19,6 +19,12 @@ protection, thieves and scammers can focus their efforts on known high-value
 targets, competitors can learn business details, and negotiating positions can
 be undermined.
 
+Watch Blockstream CTO <a href="https://www.youtube.com/watch?v=LHPYNZ8i1cU">Gregory Maxwell explaining Confidential Transactions at Coinbase</a>:
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/LHPYNZ8i1cU" frameborder="0" allowfullscreen></iframe></center>
+
+Read on to see how Confidential Transactions can be used, or <a href="/elements/confidential-transactions/investigation.html">jump straight to the math</a>.
+
 <div class="ui message">
   <h4 class="header">Did you know?</h4>
   <p>By sharing the blinding key used in the construction of a single confidential transaction, users can share access to the transaction's details.  <a href="/elements/confidential-transactions/selective-disclosure.html">Read more about selective disclosure &raquo;</a></p>
