@@ -6,6 +6,8 @@ source: https://github.com/ElementsProject/elementsproject.github.io/blob/master
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/confidential-transactions/index.md
 ---
 
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/LHPYNZ8i1cU" frameborder="0" allowfullscreen></iframe></center>
+
 One of the most powerful new features being explored in Elements is Confidential
 Transactions.  This keeps the amounts transferred visible only to participants
 in the transaction (and those they designate), while still guaranteeing that no
