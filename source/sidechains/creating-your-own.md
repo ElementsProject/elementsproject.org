@@ -4,7 +4,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/blob/master/s
 source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/creating-your-own.md
 ---
 
-This is step-by-step guide will walk you through building your own sidechain and
+This step-by-step guide will walk you through building your own sidechain and
 setting up a simple single-signer peg with a `regtest`-powered mainchain.  This
 configuration works to run a sidechain with a 1-of-1 functionary/blocksigner,
 convenient for local development and testing.
