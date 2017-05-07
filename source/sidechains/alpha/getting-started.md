@@ -303,5 +303,6 @@ see what you build!
 
 [presentation]: https://people.xiph.org/~greg/blockstream.gmaxwell.elements.talk.060815.pdf
 [elements]: http://elementsproject.github.io
+[alpha]: /sidechains/alpha
 [testnet faucet]: https://testnet-faucet.elementsproject.org/
 [elements github]: https://github.com/ElementsProject/elements
