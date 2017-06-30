@@ -15,3 +15,5 @@ Potential support for batch validation (up to a factor 2 speedup to verify group
 Stronger security proof.
 * Provably no inherent signature malleability, while ECDSA has a known malleability, and lacks a proof that no other forms exist. Note that Witness Segregation already makes signature malleability not result in transaction malleability, however.
 * Slightly faster to sign/verify than ECDSA.
+
+Andrew Poelstra lists more advantages on [the MimbleWimble mailing list](https://lists.launchpad.net/mimblewimble/msg00086.html).
