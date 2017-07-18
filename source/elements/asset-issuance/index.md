@@ -2,7 +2,7 @@
 title: Asset Issuance
 description: Create new assets on a sidechain, with optional confidentiality.
 image: /img/asset-issuance.svg
-branch: issuance-final
+branch: elements-0.14.1
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/asset-issuance/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/asset-issuance/index.md
 ---

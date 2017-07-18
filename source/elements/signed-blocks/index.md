@@ -2,7 +2,7 @@
 title: Signed Blocks
 description: Blocks can be cryptographically signed, allowing the creator of the block to verify their identity in the future.
 image: /img/signed-blocks.svg
-branch: block-signing-0.10
+branch: elements-0.14.1
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/signed-blocks/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/signed-blocks/index.md
 ---
