@@ -12,4 +12,4 @@ Deterministic pegs allow Elements Alpha to carry redeemable testnet coins withou
 
 Sidechains, like other alternative chains, can also be secured by merge-mining.  However during a bootstrap period of introduction of a new chain, unless the start of merge mining were very well synchronised, there will be a period of lower hashrate. During the early stages of this bootstrap the chain could have low enough hashrate to present a security risk even against a modest powered attacker. Given the challenges of synchronising something as organic and decentralised by design as bitcoin mining, we therefore need a mechanism to bootstrap chain security.  We start in this release with a threshold of functionaries and are plan for a later version to phase in merge-mining.
 
-A detailed explanation of the implementation in Elements Alpha can be found in the [blog](/posts/the-federated-peg-in-elements-alpha/).
+A detailed explanation of the implementation in Elements Alpha can be found in the [blog](/posts/The-Federated-Peg-in-Elements-Alpha/).
