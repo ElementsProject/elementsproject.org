@@ -32,13 +32,25 @@ Sidechains with a working network can be listed here.  <a href="https://github.c
 These sidechains are in development and testing, or are explicitly intended for non-production use.
 
 <div class="ui two stackable cards">
+  <div class="card" style="background: url('/img/platonic-solids.png');">
+    <div class="ui image centered tiny" style="background: none;" />
+      <img src="/img/0-14-1.png" style="margin: 3em 0; width: 100%;" />
+    </div>
+    <div class="content" style="background: white;">
+      <h3 class="header">[Elements 0.14.1](/sidechains/creating-your-own.html)</h3>
+      <p class="description">Elements 0.14.1 is the latest version and includes most of [the stable Elements][stable-elements]. It is a convenient way of prototyping your application before going to production.</p>
+    </div>
+    <div class="extra content">
+      <a href="/sidechains/creating-your-own.html" class="ui primary fluid button">Create Your Own Sidechain</a>
+    </div>
+  </div>
   <div class="card" style="background: url('/img/platonic-volumes.png') 100%;">
     <div class="ui image centered tiny" style="background: none;" />
       <img src="/img/alpha.png" style="margin: 3em 0; width: 100%;" />
     </div>
     <div class="content" style="background: white;">
       <h3 class="header">[Alpha](/sidechains/alpha)</h3>
-      <p class="description">Alpha is the official Elements testnet.  Pegged to Bitcoin's `testnet`, it includes most of [the stable Elements][stable-elements], and is a convenient way of prototyping your application before going to production.</p>
+      <p class="description">Alpha is an older version of Elements. This documentation is outdated, and will eventually be removed. Elements Alpha does not support recent elements features, or receive backported security fixes.</p>
     </div>
     <div class="extra content">
       <a href="/sidechains/alpha" class="ui primary fluid button">Learn More about Alpha</a>
@@ -66,18 +78,6 @@ These sidechains are in development and testing, or are explicitly intended for 
     </div>
     <div class="extra content">
       <a href="/sidechains/gem" class="ui primary fluid button">Learn More about Gem</a>
-    </div>
-  </div>
-  <div class="card" style="background: url('/img/platonic-solids.png');">
-    <div class="ui image centered tiny" style="background: none;" />
-      <img src="/img/square-image.png" style="margin: 3em 0; width: 100%;" />
-    </div>
-    <div class="content" style="background: white;">
-      <h3 class="header">[Create Your Own](/sidechains/creating-your-own.html)</h3>
-      <p class="description">Working on something interesting?  Add it here.</p>
-    </div>
-    <div class="extra content">
-      <a href="/sidechains/creating-your-own.html" class="ui primary fluid button">Creating Your Own Sidechain</a>
     </div>
   </div>
 </div>
