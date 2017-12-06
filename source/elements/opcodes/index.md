@@ -1,6 +1,6 @@
 ---
 title: New Opcodes
-description: Introduces DETERMINISTICRANDOM and CHECKSIGFROMSTACK, in addition to re-enabling several scripts previously enabled in Bitcoin.
+description: Introduces DETERMINISTICRANDOM and CHECKSIGFROMSTACK, in addition to re-enabling several scripts previously disabled in Bitcoin.
 image: /img/new-opcodes.svg
 source: https://github.com/ElementsProject/elementsproject.github.io/blob/master/source/elements/opcodes/index.md
 edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/elements/opcodes/index.md
