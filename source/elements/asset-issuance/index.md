@@ -13,7 +13,7 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/edit/master/s
 </div>
 
 Users can issue their own confidential assets which represent fungible ownership
-of the underlying asset type representing by the newly created units, which
+of the underlying asset type represented by the newly created units, which
 could theoretically represent any asset including vouchers, coupons, currencies,
 deposits, bonds, shares, etc. (subject to the respective jurisdiction’s
 regulatory requirements).
