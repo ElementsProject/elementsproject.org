@@ -43,7 +43,7 @@ decentralized merge-mining of the sidechain, and ultimately to phase in the full
 2-way peg mechanism.
 
 #### Moving coins between Testnet and Alpha
-See [alpha-README.md](https://github.com/ElementsProject/elements/blob/alpha/alpha-README.md) for instructions on how to transfer testnet coins to the alpha network and back.  Note that there is a lengthy confirmation and contest period that you must wait for a peg transfer to complete.
+See [alpha-README.md](https://github.com/ElementsProject/elements/blob/alpha/alpha-README.md) for instructions on how to transfer testnet coins to the alpha network and back.  Note that there is a lengthy confirmation and contest period that you must wait for in order for a peg transfer to complete.
 
 * [testnet-faucet](https://testnet-faucet.elementsproject.org/)
 * [alpha-faucet](https://alpha-faucet.elementsproject.org/)
