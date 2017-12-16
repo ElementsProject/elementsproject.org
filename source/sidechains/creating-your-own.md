@@ -14,7 +14,7 @@ Deterministic Peg Element](/elements/deterministic-peg.html) for more details.
 
 #### Prerequisites
 You'll need a working version of Elements.  Follow [the Elements build
-instructions](https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md)
+instructions](https://github.com/ElementsProject/elements/blob/elements-0.14.1/doc/build-unix.md)
 to get set up.
 
 ### Creating your own blockchain
