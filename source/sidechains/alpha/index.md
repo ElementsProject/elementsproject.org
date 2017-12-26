@@ -4,6 +4,8 @@ edit: https://github.com/ElementsProject/elementsproject.github.io/blob/master/s
 source: https://github.com/ElementsProject/elementsproject.github.io/edit/master/source/sidechains/alpha/index.md
 ---
 
+**These instructions are outdated, and will eventually be removed. Elements Alpha does not support recent elements features, or receive backported security fixes. We recommend all new elements applications to be developed using `regtest` mode, and have provided instructions for setting up such test networks using recent builds of elements [here](https://github.com/ElementsProject/elements).**
+
 To make it easy for the community to test [the latest
 Elements][latest-elements], they are deployed on a public sidechain (pegged to
 Bitcoin's `testnet`), <strong>Elements Alpha</strong>.  All code is open source,
