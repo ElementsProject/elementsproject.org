@@ -44,7 +44,7 @@ $ elements-cli sendtoaddress CTEwQjyErENrxo8dSQ6pq5atss7Ym9S7P6GGK4PiGAgQRgoh1iP
 ```
 
 The key difference from Bitcoin is the addition of cryptographic privacy. These
-transactions differ in that the the amounts transferred are kept visible only to
+transactions differ in that the amounts transferred are kept visible only to
 participants in the transaction (and those they designate).
 
 <div class="ui icon info message">
@@ -82,7 +82,7 @@ some important limitations to be aware of.
 For example, the implementation only hides a certain number of the digits of the
 amount of each transaction output, dependent on the range proof's "blinding
 coverage" at a desired precision level.  Subsequently, there is a 'minimum
-confidential amount' that around 0.0001 BTC, and a 'maximum confidential amount'
+confidential amount' of around 0.0001 BTC, and a 'maximum confidential amount'
 that is 2<sup>32</sup> times the minimum amount.
 
 Digits smaller than the minimum will be revealed to observers; for example, if

@@ -18,7 +18,7 @@ instructions](https://github.com/ElementsProject/elements/blob/elements-0.14.1/d
 to get set up.
 
 ### Creating your own blockchain
-Just like in Bitcoin, Elements can be started in `regtest` mode which allows to
+Just like in Bitcoin, Elements can be started in `regtest` mode which allows you to
 easily create test chains and networks.
 
 1. Start Elements:
@@ -42,7 +42,7 @@ easily create test chains and networks.
   >     NEW_BLOCK=`ec getnewblockhex`
   >     BLOCKSIG=`ec signblock $NEW_BLOCK`
     <div class="ui info message">
-      If there were multiple blocksigners, you'd need to distribute `NEW_BLOCK`, collect signatures, then call `combineblocksigs`.  We'll leave this as an excercise to the reader.
+      If there were multiple blocksigners, you'd need to distribute `NEW_BLOCK`, collect signatures, then call `combineblocksigs`.  We'll leave this as an excercise for the reader.
     </div>
   >     SIGNED_BLOCK=`ec combineblocksigs $NEW_BLOCK \[\"$BLOCKSIG\"\] | jq -r '.hex'`
     * ensure that the output of combineblocksigs has "complete" true

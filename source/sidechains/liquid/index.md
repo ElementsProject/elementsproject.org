@@ -33,7 +33,7 @@ balances and accounts across the market to avoid ISL, increasing overall capital
 requirements and exposure to the possibility of counterparty risk.
 
 Liquid is a powerful sidechain with wide-reaching implications.  To learn more,
-[read the Liquid announcement](https://www.blockstream.com/2015/10/12/introducing-liquid/).
+[read the Liquid announcement](https://www.blockstream.com/2015/10/12/introducing-liquid.html).
 
 <a href="mailto:liquid@blockstream.com" class="ui button primary huge">Contact Blockstream To Learn More<i class="ui icon chevron right"></i></a>
 <!-- <a href="https://blockstream.io" class="ui button primary huge">Read the Liquid Whitepaper<i class="ui icon chevron right"></i></a> -->
