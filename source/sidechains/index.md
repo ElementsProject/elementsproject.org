@@ -68,6 +68,18 @@ These sidechains are in development and testing, or are explicitly intended for 
       <a href="/sidechains/gem" class="ui primary fluid button">Learn More about Gem</a>
     </div>
   </div>
+  <div class="card" style="background: url('/img/cbback.png');">
+    <div class="ui image centered tiny" style="background: none;" />
+      <img src="/img/cb.png" style="margin: 3em 0; width: 100%;" />
+    </div>
+    <div class="content" style="background: white;">
+      <h3 class="header">[Ocean](/sidechains/gem)</h3>
+      <p class="description">Ocean by CommerceBlock is a federated sidechain that implements BIP 175.  CommerceBlock uses Ocean to manage multiple assets for clients in the commodities space.</p>
+    </div>
+    <div class="extra content">
+      <a href="/sidechains/ocean" class="ui primary fluid button">Learn More about Ocean</a>
+    </div>
+  </div>
   <div class="card" style="background: url('/img/platonic-solids.png');">
     <div class="ui image centered tiny" style="background: none;" />
       <img src="/img/square-image.png" style="margin: 3em 0; width: 100%;" />
