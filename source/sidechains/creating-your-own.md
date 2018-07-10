@@ -9,8 +9,10 @@ setting up a simple single-signer peg with a `regtest`-powered mainchain.  This
 configuration works to run a sidechain with a 1-of-1 functionary/blocksigner,
 convenient for local development and testing.
 
-There are several other ways of deriving consensus on a sidechain.  See [the
-Deterministic Peg Element](/elements/deterministic-peg.html) for more details.
+There are several other ways of deriving consensus on a sidechain.
+See [the Deterministic Peg Element][deterministic-peg] for more details.
+
+[deterministic-peg]: /elements/deterministic-pegs
 
 #### Prerequisites
 You'll need a working version of Elements.  Follow [the Elements build
